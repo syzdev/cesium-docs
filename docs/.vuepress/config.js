@@ -7,5 +7,6 @@ module.exports = {
       { text: '关于', link: '/about/' },
     ],
     logo: '/assets/img/logo.png',
+    sidebar: 'auto'
   }
 }
