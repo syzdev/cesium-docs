@@ -2,7 +2,7 @@
 home: true
 heroImage: /assets/img/logo.png
 heroText: Cesium入门教程
-tagline: 包含Ceisum的基本使用以及部分实例
+tagline: 包含Ceisum的基本使用以及部分案例
 actionText: 快速上手 →
 actionLink: /guide/
 # features:
