@@ -2,9 +2,9 @@
 home: true
 heroImage: /assets/img/logo.png
 heroText: Cesium入门教程
-tagline: 包含Ceisum的基本使用以及部分案例
+tagline: 包含Ceisum的基本使用及部分案例
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /guide/cesium-brief-introduction/
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
