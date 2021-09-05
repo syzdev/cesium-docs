@@ -20,5 +20,5 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
 
 ![cbi-04](/cesium-docs/assets/img/guide/cbi-04.jpg)
 
-该合作能够使Cesium在地质过程表达、智慧城市、建筑工程以及航空航天等领域拥有更多的可能性。
+该合作能够使Cesium在地质过程表达、智慧城市、建筑工程以及航空航天等领域的拓展拥有了更多的可能性。
 

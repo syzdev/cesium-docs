@@ -3,6 +3,7 @@ module.exports = {
   title: 'Cesium入门教程',
   themeConfig: {
     logo: '/assets/img/logo-mini.png',
+    sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
@@ -15,6 +16,7 @@ module.exports = {
         // '',
         'cesium-brief-introduction',
         'hello-cesium',
+        'interface-introduction-and-control-operation',
       ],
       '/example/': [
         '',
@@ -22,5 +24,10 @@ module.exports = {
         'example02',
       ]
     },
+  },
+  plugins: {
+    '@vuepress/medium-zoom': {
+      selector: 'img',
+    }
   }
 }

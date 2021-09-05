@@ -1,5 +1,5 @@
 # 关于
 
-## 1.1
+作者：syz :grin:
 
-### 1.1.1
+Email：syzdev@126.com

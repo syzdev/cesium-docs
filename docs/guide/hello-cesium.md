@@ -28,7 +28,7 @@ title: 运行环境搭建
 
 ![hc-05](/cesium-docs/assets/img/guide/hc-05.png)
 
-点击后”Live Server“会自动开启一个端口号为5500的服务，并会由本机的默认浏览器打开，能够看到Cesium创建的虚拟地球：
+点击后”Live Server“会自动开启一个端口号为5500的服务，并会由本机的默认浏览器~打开，能够看到Cesium创建的虚拟地球：
 
 ![hc-06](/cesium-docs/assets/img/guide/hc-06.png)
 
@@ -58,5 +58,6 @@ app.listen(8080, () => {
 })
 ```
 
-上面代码的含义是将文件夹“CesiumExample185”作为一个服务发布，监听的端口为8080端口。
+上面代码的含义是将文件夹“CesiumExample185”作为一个服务发布，监听的端口为8080端口，在命令行输入`node server.js`即可打开该服务，再在浏览器输入 http://localhost:8080/helloworld.html 即可打开项目：
 
+![hc-08](/cesium-docs/assets/img/guide/hc-08.png)

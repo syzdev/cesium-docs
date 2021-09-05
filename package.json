@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/syzdev/cesium-docs#readme",
   "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
     "vuepress": "^1.8.2"
   }
 }
