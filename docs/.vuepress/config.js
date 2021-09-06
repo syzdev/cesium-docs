@@ -16,7 +16,8 @@ module.exports = {
         // '',
         'cesium-brief-introduction',
         'hello-cesium',
-        'interface-introduction-and-control-operation',
+        'interface-introduction',
+        'control-operation',
       ],
       '/example/': [
         '',
