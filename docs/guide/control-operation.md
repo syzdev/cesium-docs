@@ -238,3 +238,11 @@ viewer.scene.globe.show = true  // 隐藏地球
 viewer.scene.sun.show = false  // 隐藏太阳
 ```
 
+## 隐藏月亮
+
+月亮默认是显示的，能够在太阳直射地球的背面提供光照，隐藏月亮的代码如下：
+
+```javascript
+viewer.scene.moon.show = false // 隐藏月亮
+```
+
