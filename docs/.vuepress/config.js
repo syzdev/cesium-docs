@@ -3,11 +3,11 @@ module.exports = {
   title: 'Cesium入门教程',
   themeConfig: {
     logo: '/assets/img/logo-mini.png',
-    sidebarDepth: 3,
+    sidebarDepth: 1,
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
-      { text: '案例', link: '/example/' },
+      { text: '案例', link: '/example/pick-coordinates' },
       { text: '关于', link: '/about/' },
       { text: 'Github', link: 'https://github.com/syzdev/cesium-docs' },
     ],
@@ -18,11 +18,12 @@ module.exports = {
         'hello-cesium',
         'interface-introduction',
         'control-operation',
+        'coordinate-system',
+        'create-entity',
       ],
       '/example/': [
-        '',
-        'example01',
-        'example02',
+        // '',
+        'pick-coordinates',
       ]
     },
   },
