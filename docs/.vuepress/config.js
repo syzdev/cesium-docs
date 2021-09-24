@@ -19,11 +19,15 @@ module.exports = {
         'interface-introduction',
         'control-operation',
         'coordinate-system',
+        'image-system',
+        'terrain-system',
         'create-entity',
       ],
       '/example/': [
         // '',
         'pick-coordinates',
+        'coordinate-transform',
+        'zoom-control'
       ]
     },
   },
