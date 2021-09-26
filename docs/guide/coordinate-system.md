@@ -62,7 +62,7 @@ let cartographic = new Cesium.Cartographic(longitude, latitude, height)
 与笛卡尔空间直角坐标系Cartesian3相比，平面坐标系Cartesian2少了一个z轴分量，该坐标系通常用来表达屏幕坐标，如鼠标在屏幕上点击一处位置，返回的就是一个平面坐标Cartesian2对象。获取平面坐标对象的方法如下：
 
 ```javascript
-let pick1 = new Cesium.Cartesian2(0,0);
+let pick1 = new Cesium.Cartesian2(0,0)
 let cartesian_2 = viewer.scene.globe.pick(viewer.camera.getPickRay(pick1), viewer.scene)
 ```
 
