@@ -3,3 +3,34 @@ title: 影像
 ---
 
 # 影像
+
+Cesium加载的虚拟地球默认是有影像的，如图：
+![cbi-01](/cesium-docs/assets/img/guide/cbi-01.jpg)
+
+默认使用的影像为“Bing Maps Aerial”：
+
+![is-01](/cesium-docs/assets/img/guide/is-01.png)
+
+由于国外的地图服务往往拍摄生成的年份比较早，所以很多地区的影像和实际影像出入较大，所以推荐使用国内的影像服务。
+
+## 天地图（推荐）
+
+在使用天地图之前请按照该教程“[注册天地图Token教程 - syzdev](https://syzdev.cn/2021/08/11/注册天地图Token教程/)”注册一个天地图账号以及一个天地图Token。创建完成后可以在Cesium中加载天地图服务：
+
+```javascript
+const tdtToken = '' // 填入你创建的天地图Token
+var viewer = new Cesium.Viewer("cesiumContainer", {
+  imageryProvider: new Cesium.WebMapTileServiceImageryProvider({
+    url: `http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=${tdtToken}`,
+    layer: "tdtBasicLayer",
+    style: "default",
+    format: "image/jpeg",
+    tileMatrixSetID: "GoogleMapsCompatible",
+    show: false
+  })
+});
+```
+
+加载后的效果如下：
+
+![is-02](/cesium-docs/assets/img/guide/is-02.png)
