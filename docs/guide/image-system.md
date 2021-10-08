@@ -89,5 +89,3 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-05](/cesium-docs/assets/img/guide/is-05.png)
 
-https://blog.csdn.net/u011365716/article/details/84772021)
-

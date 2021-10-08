@@ -20,6 +20,7 @@ module.exports = {
         'control-operation',
         'coordinate-system',
         'image-system',
+        'annotation-system',
         'terrain-system',
         'create-entity',
       ],
