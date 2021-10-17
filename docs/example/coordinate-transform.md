@@ -24,8 +24,8 @@ let cartesian3 = viewer.scene.globe.ellipsoid.cartographicToCartesian(cartograph
 ```javascript
 let cartesian3 = new Cesium.cartesian3(x, y, z)
 let cartographic = viewer.scene.globe.ellipsoid.cartesianToCartographic(cartesian3)
-let lat = Cesium.Math.toDegrees(cartograhphic.latitude) // 获取经度
-let lng = Cesium.Math.toDegrees(cartograhpinc.longitude) // 获取纬度
+let lat = Cesium.Math.toDegrees(cartographic.latitude) // 获取经度
+let lng = Cesium.Math.toDegrees(cartographic.longitude) // 获取纬度
 let hgt = cartographic.height // 获取高度
 ```
 
