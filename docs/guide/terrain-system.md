@@ -19,3 +19,17 @@ viewer.terrainProvider = Cesium.createWorldTerrain()
 加载后的效果如下，能看到明显的起伏：
 
 ![ts-02](/cesium-docs/assets/img/guide/ts-02.png)
+
+## Arcgis地形
+
+加载Arcgis地形的代码如下：
+
+```javascript
+viewer.terrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
+  url: 'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer',
+})
+```
+
+加载后的效果如下：
+
+![ts-03](/cesium-docs/assets/img/guide/ts-03.png)
