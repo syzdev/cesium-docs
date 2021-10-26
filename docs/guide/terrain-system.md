@@ -33,3 +33,23 @@ viewer.terrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
 加载后的效果如下：
 
 ![ts-03](/cesium-docs/assets/img/guide/ts-03.png)
+
+## 火星科技地形
+
+::: warning 注意
+
+参考[链接]([terrain 三维地形 [场景参数化 快速开始] | Mars3D示例 | 合肥火星科技有限公司](http://mars3d.cn/example/editor.html?#b10_terrain))，版权归[火星科技](http://mars3d.cn/)所有，在此仅作为学习交流所用，侵删。
+
+:::
+
+加载火星科技地形的代码如下：
+
+```javascript
+viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
+  url: 'http://data.marsgis.cn/terrain',
+})
+```
+
+加载后的效果如下：
+
+![ts-04](/cesium-docs/assets/img/guide/ts-04.png)
