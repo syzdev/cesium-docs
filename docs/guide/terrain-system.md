@@ -38,7 +38,7 @@ viewer.terrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
 
 ::: warning 注意
 
-参考[链接]([terrain 三维地形 [场景参数化 快速开始] | Mars3D示例 | 合肥火星科技有限公司](http://mars3d.cn/example/editor.html?#b10_terrain))，版权归[火星科技](http://mars3d.cn/)所有，在此仅作为学习交流所用，侵删。
+参考[链接]([terrain 三维地形](http://mars3d.cn/example/editor.html?#b10_terrain))，版权归[火星科技](http://mars3d.cn/)所有，在此仅作为学习交流所用，侵删。
 
 :::
 
