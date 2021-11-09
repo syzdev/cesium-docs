@@ -89,3 +89,18 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-05](/cesium-docs/assets/img/guide/is-05.png)
 
+## Bing地图影像
+
+加载Bing地图影像的代码如下，其中`key`属性需要在[Bing maps Dev Center](https://www.bingmapsportal.com/Account/Register)中申请，按照页面提示申请即可：
+
+```javascript
+    viewer.imageryProvider = new Cesium.BingMapsImageryProvider({
+      url: 'https://dev.virtualearth.net',
+      key: 'xxx',
+      mapStyle : Cesium.BingMapsStyle.AERIAL
+    });
+```
+
+加载后的效果如下：
+
+![is-06](/cesium-docs/assets/img/guide/is-06.png)
