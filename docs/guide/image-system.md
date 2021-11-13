@@ -94,13 +94,31 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 加载Bing地图影像的代码如下，其中`key`属性需要在[Bing maps Dev Center](https://www.bingmapsportal.com/Account/Register)中申请，按照页面提示申请即可：
 
 ```javascript
-    viewer.imageryProvider = new Cesium.BingMapsImageryProvider({
-      url: 'https://dev.virtualearth.net',
-      key: 'xxx',
-      mapStyle : Cesium.BingMapsStyle.AERIAL
-    });
+viewer.imageryProvider = new Cesium.BingMapsImageryProvider({
+  url: 'https://dev.virtualearth.net',
+  key: 'xxx',
+  mapStyle : Cesium.BingMapsStyle.AERIAL
+});
 ```
 
 加载后的效果如下：
 
 ![is-06](/cesium-docs/assets/img/guide/is-06.png)
+
+## 加载本地图片
+
+加载本地图片（`worldimage.jpg`）如下：
+
+![is-07](/cesium-docs/assets/img/guide/is-07.jpg)
+
+加载的代码如下：
+
+```
+viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
+  url: './data/worldimage.jpg'
+}));
+```
+
+加载后的效果如下：
+
+![is-08](/cesium-docs/assets/img/guide/is-08.png)
