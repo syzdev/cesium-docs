@@ -18,6 +18,19 @@ title: 运行环境搭建
 
 ![hc-03](/cesium-docs/assets/img/guide/hc-03.png)
 
+## Cesium目录结构分析
+
+`Build`文件夹下包含如下三个子文件夹：
+
+- `Cesium`：Cesium中的资源及代码
+  - `Assets`：Cesium中的静态资源，包括图片数据及JSON数据
+  - `Scene`：自定义着色器指南，新手可以直接忽略。
+  - `ThirdParty`：Cesium中使用的第三方库。
+  - `Widgets`：Cesium中的CSS样式文件。
+  - `Workers`：Cesium核心工作代码。
+- `CesiumUnminified`：同上，区别是该文件夹下的代码都是未经过压缩（Unminified）的。
+- `Documentation`：Cesium的API文档。
+
 ## 方法1：快速搭建
 
 下载并安装VS Code，在侧边栏的插件一栏中安装插件“Live Server”：
