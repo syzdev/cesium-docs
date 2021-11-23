@@ -223,7 +223,7 @@ viewer.scene.skyAtmosphere.show = false  // 隐藏大气层
 隐藏地球的代码如下：
 
 ```javascript
-viewer.scene.globe.show = true  // 隐藏地球
+viewer.scene.globe.show = false  // 隐藏地球
 ```
 
 ## 隐藏太阳
