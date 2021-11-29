@@ -53,3 +53,19 @@ viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
 加载后的效果如下：
 
 ![ts-04](/cesium-docs/assets/img/guide/ts-04.png)
+
+## maptiler地形
+
+加载maptiler地形的伪代码如下：
+
+```javascript
+const maptilerKey = '2Ds1WmUyIViHs0pSKPGC'
+viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
+  url: `https://api.maptiler.com/tiles/terrain-quantized-mesh/?key=${maptilerKey}`,
+  requestVertexNormals: true
+})
+```
+
+加载后的效果如下：
+
+![ts-05](/cesium-docs/assets/img/guide/ts-05.png)

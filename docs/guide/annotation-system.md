@@ -25,7 +25,7 @@ viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
 ```javascript
 const tdtToekn = 'xxx'
 viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
-  url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=你的Token",
+  url: `http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=${tdtToekn}`,
   layer: "tdtAnnoLayer",
   style: "default",
   format: "image/jpeg",
