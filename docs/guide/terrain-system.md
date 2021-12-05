@@ -56,10 +56,10 @@ viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
 
 ## maptiler地形
 
-加载maptiler地形的伪代码如下：
+加载maptiler地形的伪代码如下，需要访问[maptiler官网](https://www.maptiler.com/)注册账号获取key：
 
 ```javascript
-const maptilerKey = '2Ds1WmUyIViHs0pSKPGC'
+const maptilerKey = 'xxx'
 viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
   url: `https://api.maptiler.com/tiles/terrain-quantized-mesh/?key=${maptilerKey}`,
   requestVertexNormals: true
