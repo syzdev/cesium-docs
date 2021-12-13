@@ -28,7 +28,8 @@ module.exports = {
         // '',
         'pick-coordinates',
         'coordinate-transform',
-        'zoom-control'
+        'zoom-control',
+        '3dtiles-control'
       ]
     },
   },
