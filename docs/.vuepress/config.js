@@ -1,9 +1,11 @@
 module.exports = {
   base: '/cesium-docs/',
   title: 'Cesium入门教程',
+  theme: 'reco',
   themeConfig: {
     logo: '/assets/img/logo-mini.png',
     sidebarDepth: 1,
+    subSidebar: 'auto',
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
@@ -33,9 +35,24 @@ module.exports = {
       ]
     },
   },
-  plugins: {
-    '@vuepress/medium-zoom': {
-      selector: 'img',
-    }
-  }
+  plugins: [
+    ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+      width: '300px', // 默认 260px
+      title: '消息提示',
+      body: [
+        {
+          type: 'title',
+          content: '测试',
+          style: 'text-aligin: center;'
+        },
+      ],
+      footer: [
+        {
+          type: 'button',
+          text: '跳转',
+          link: '/test'
+        },
+      ]
+    }]
+  ]
 }
