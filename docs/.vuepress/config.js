@@ -35,14 +35,17 @@ module.exports = {
       ]
     },
   },
-  plugins: [
-    ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+  plugins: {
+    '@vuepress/medium-zoom': {
+      selector: 'img',
+    },
+    '@vuepress-reco/vuepress-plugin-bulletin-popover': {
       width: '300px', // 默认 260px
       title: '消息提示',
       body: [
         {
           type: 'title',
-          content: '测试',
+          content: '建议国内用户访问国内站点，请点击下方按钮跳转到国内站点',
           style: 'text-aligin: center;'
         },
       ],
@@ -50,9 +53,9 @@ module.exports = {
         {
           type: 'button',
           text: '跳转',
-          link: '/test'
+          link: 'https://syzdev.gitee.io/cesium-docs/'
         },
       ]
-    }]
-  ]
+    }
+  }
 }
