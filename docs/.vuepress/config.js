@@ -4,8 +4,9 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     logo: '/assets/img/logo-mini.png',
-    sidebarDepth: 1,
+    // sidebarDepth: 1,
     subSidebar: 'auto',
+    noFoundPageByTencent: false,
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
@@ -15,23 +16,60 @@ module.exports = {
     ],
     sidebar: {
       '/guide/': [
-        // '',
-        'cesium-brief-introduction',
-        'hello-cesium',
-        'interface-introduction',
-        'control-operation',
-        'coordinate-system',
-        'image-system',
-        'annotation-system',
-        'terrain-system',
-        'create-entity',
+        {
+          title: 'Cesium简介和环境搭建',
+          collapsable: false,
+          children: [
+            'cesium-brief-introduction',
+            'hello-cesium',
+          ]
+        },
+        {
+          title: '界面操作',
+          collapsable: false,
+          children: [
+            'interface-introduction',
+            'control-operation',
+            'coordinate-system',
+          ]
+        },
+        {
+          title: '影像和标注',
+          collapsable: false,
+          children: [
+            'image-system',
+            'image-system-example',
+            'annotation-system'
+          ]
+        },
+        {
+          title: '地形',
+          collapsable: false,
+          children: [
+            'terrain-system',
+          ]
+        },
+        {
+          title: '实体 Entity',
+          collapsable: false,
+          children: [
+            'create-entity',
+            'box-entity',
+            'point-entity'
+          ]
+        }
       ],
       '/example/': [
-        // '',
-        'pick-coordinates',
-        'coordinate-transform',
-        'zoom-control',
-        '3dtiles-control'
+        {
+          title: '常规案例',
+          collapsable: false,
+          children: [
+            'pick-coordinates',
+            'coordinate-transform',
+            'zoom-control',
+            '3dtiles-control'
+          ]
+        }
       ]
     },
   },
@@ -57,5 +95,8 @@ module.exports = {
         },
       ]
     }
+  },
+  markdown: {
+    lineNumbers: true
   }
 }
