@@ -39,6 +39,7 @@ module.exports = {
           children: [
             'image-system',
             'ImageryProvider',
+            'load-image',
             'ImageryProvider-example',
             'ImageryLayer',
             'ImageryLayerCollection',
