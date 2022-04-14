@@ -1,5 +1,5 @@
 ---
-title: 影像提供者示例 ImageryProvider
+title: 影像图层 ImageryLayer
 ---
 
 ## 影像叠加
