@@ -2,8 +2,6 @@
 title: 运行环境搭建
 ---
 
-# 运行环境搭建
-
 ## 下载Cesium到本地
 
 打开[Cesium官网](https://cesium.com/platform/cesiumjs/)，在页面下方找到“Start building your 3D globe app”，再点击下方的“DOWNLOAD NOW”。

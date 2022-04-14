@@ -2,7 +2,6 @@
 title: 影像提供者示例 ImageryProvider
 ---
 
-
 由于国外的地图服务往往拍摄生成的年份比较早，所以很多地区的影像和实际影像出入较大，所以推荐使用国内的影像服务。
 
 ## ArcGisMapServerImageryProvider
@@ -10,8 +9,8 @@ title: 影像提供者示例 ImageryProvider
 加载Arcgis影像服务的代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
-  imageryProvider:new Cesium.ArcGisMapServerImageryProvider({
+const viewer = new Cesium.Viewer("cesiumContainer", {
+  imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
     url : 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
   })
 })
@@ -109,8 +108,8 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 加载谷歌地图影像的代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
-  imageryProvider:new Cesium.UrlTemplateImageryProvider({
+const viewer = new Cesium.Viewer("cesiumContainer", {
+  imageryProvider: new Cesium.UrlTemplateImageryProvider({
     url: "http://mt1.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}&s=Gali"
   })
 })
@@ -125,8 +124,8 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 加载高德地图影像的代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
-  imageryProvider:new Cesium.UrlTemplateImageryProvider({
+const viewer = new Cesium.Viewer("cesiumContainer", {
+  imageryProvider: new Cesium.UrlTemplateImageryProvider({
     url: "https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}"
   })
 })
@@ -144,7 +143,7 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 
 ```javascript
 const tdtToken = '' // 填入你创建的天地图Token
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
   imageryProvider: new Cesium.WebMapTileServiceImageryProvider({
     url: `http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=${tdtToken}`,
     layer: "tdtBasicLayer",

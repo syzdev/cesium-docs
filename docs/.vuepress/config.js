@@ -87,7 +87,7 @@ module.exports = {
       body: [
         {
           type: 'title',
-          content: '建议国内用户访问国内站点，请点击下方按钮跳转到国内站点',
+          content: '若访问卡顿，可以点击下方按钮跳转到另一个站点',
           style: 'text-aligin: center;'
         },
       ],

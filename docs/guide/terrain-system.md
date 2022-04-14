@@ -2,8 +2,6 @@
 title: 地形
 ---
 
-# 地形
-
 Cesium默认是不包含地形的，如下图所示，在包含山脉的地区是看不到地形起伏的：
 
 ![ts-01](/cesium-docs/assets/img/guide/ts-01.png)

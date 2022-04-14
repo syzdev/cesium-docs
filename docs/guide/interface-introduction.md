@@ -2,7 +2,6 @@
 title: 界面介绍
 ---
 
-# 界面介绍
 初始化后的界面及各个控件的名称如图：
 ![iiaco-01](/cesium-docs/assets/img/guide/iiaco-01.png)
 按照顺序，各个控件的说明如下。
