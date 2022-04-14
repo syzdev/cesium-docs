@@ -38,7 +38,10 @@ module.exports = {
           collapsable: false,
           children: [
             'image-system',
-            'image-system-example',
+            'ImageryProvider',
+            'ImageryProvider-example',
+            'ImageryLayer',
+            'ImageryLayerCollection',
             'annotation-system'
           ]
         },

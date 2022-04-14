@@ -1,7 +1,7 @@
 ---
-title: 影像：实践篇
+title: 影像提供者示例 ImageryProvider
 ---
- 
+
 
 由于国外的地图服务往往拍摄生成的年份比较早，所以很多地区的影像和实际影像出入较大，所以推荐使用国内的影像服务。
 
@@ -75,7 +75,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 加载的代码如下：
 
-```
+```javascript
 viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
   url: './data/worldimage.jpg'
 }));
@@ -94,6 +94,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
   imageryProvider: new Cesium.TileCoordinatesImageryProvider()
 })
 ```
+![is-12](/cesium-docs/assets/img/guide/is-12.png)
 
 ## UrlTemplateImageryProvider
 
