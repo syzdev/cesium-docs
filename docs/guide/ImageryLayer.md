@@ -61,7 +61,7 @@ viewer.scene.imageryLayers._layers[0].contrast = 3
  <iframe  
  height=600 
  width=100% 
- src="https://syzdev.gitee.io/page/cesium/ImageryConfig.html"  
+ src="http://syzdev.cn/cesium-docs-demo//ImageryConfig.html"  
  frameborder=0 >
  </iframe>
 :::

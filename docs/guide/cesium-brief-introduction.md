@@ -8,6 +8,17 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
 
 ![cbi-01](/cesium-docs/assets/img/guide/cbi-01.jpg)
 
+::: details 点击查看在线 Cesium Demo
+<br/>
+
+ <iframe  
+ height=600 
+ width=100% 
+ src="http://syzdev.cn/cesium-docs-demo/HelloCesium.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 可以对Cesium生成的虚拟地球进行视角旋转、平移等操作：
 
 ![cbi-02](/cesium-docs/assets/img/guide/cbi-02.gif)
@@ -22,13 +33,3 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
 
 该合作能够使Cesium在地质过程表达、智慧城市、建筑工程以及航空航天等领域的拓展拥有了更多的可能性。
 
-::: details 点击查看在线 Cesium Demo
-<br/>
-
- <iframe  
- height=600 
- width=100% 
- src="https://syzdev.gitee.io/page/cesium/HelloCesium.html"  
- frameborder=0 >
- </iframe>
-:::

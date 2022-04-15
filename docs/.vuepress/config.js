@@ -6,6 +6,7 @@ module.exports = {
     logo: '/assets/img/logo-mini.png',
     // sidebarDepth: 1,
     subSidebar: 'auto',
+    mode: 'light',
     noFoundPageByTencent: false,
     nav: [
       { text: '首页', link: '/' },
@@ -87,17 +88,17 @@ module.exports = {
       body: [
         {
           type: 'title',
-          content: '若访问卡顿，可以点击下方按钮跳转到另一个站点',
+          content: '内容正在持续更新中，敬请关注。',
           style: 'text-aligin: center;'
         },
       ],
-      footer: [
-        {
-          type: 'button',
-          text: '跳转',
-          link: 'https://syzdev.gitee.io/cesium-docs/'
-        },
-      ]
+      // footer: [
+      //   {
+      //     type: 'button',
+      //     text: '跳转',
+      //     link: 'https://syzdev.gitee.io/cesium-docs/'
+      //   },
+      // ]
     }
   },
   markdown: {
