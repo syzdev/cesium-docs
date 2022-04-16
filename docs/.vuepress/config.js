@@ -26,6 +26,14 @@ module.exports = {
           ]
         },
         {
+          title: '视图与场景',
+          collapsable: false,
+          children: [
+            'viewer-introduction',
+            'scene-introduction',
+          ]
+        },
+        {
           title: '界面操作',
           collapsable: false,
           children: [
