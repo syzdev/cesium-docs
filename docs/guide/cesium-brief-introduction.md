@@ -14,7 +14,7 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
  <iframe  
  height=600 
  width=100% 
- src="http://syzdev.cn/cesium-docs-demo/HelloCesium.html"  
+ src="https://syzdev.cn/cesium-docs-demo/HelloCesium.html"  
  frameborder=0 >
  </iframe>
 :::
