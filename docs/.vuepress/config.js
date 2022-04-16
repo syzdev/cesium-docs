@@ -31,6 +31,7 @@ module.exports = {
           children: [
             'interface-introduction',
             'control-operation',
+            'cesium-widget',
             'coordinate-system',
           ]
         },
