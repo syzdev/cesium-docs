@@ -40,6 +40,7 @@ module.exports = {
             'interface-introduction',
             'control-operation',
             'cesium-widget',
+            'scene-operation',
             'coordinate-system',
           ]
         },
