@@ -11,6 +11,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
+      { text: '进阶', link: '/advance/coordinate-system' },
       { text: '案例', link: '/example/pick-coordinates' },
       { text: '关于', link: '/about/' },
       { text: 'Github', link: 'https://github.com/syzdev/cesium-docs' },
@@ -41,7 +42,6 @@ module.exports = {
             'control-operation',
             'cesium-widget',
             'scene-operation',
-            'coordinate-system',
           ]
         },
         {
@@ -82,9 +82,54 @@ module.exports = {
             'pick-coordinates',
             'coordinate-transform',
             'zoom-control',
-            '3dtiles-control'
+            '3dtiles-control',
+          ]
+        },
+        {
+          title: '性能优化',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: '官方案例汇总',
+          collapsable: false,
+          children: [
           ]
         }
+      ],
+      '/advance/': [
+        {
+          title: '坐标系统',
+          collapsable: false,
+          children: [
+            'coordinate-system',
+          ]
+        },
+        {
+          title: '图形 Primitive',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: '模型 glTF / 3DTiles',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: '事件 ScreenSpaceEventHandler',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: '矢量数据 DataSource',
+          collapsable: false,
+          children: [
+          ]
+        },
       ]
     },
   },
