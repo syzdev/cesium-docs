@@ -32,6 +32,7 @@ module.exports = {
           children: [
             'viewer-introduction',
             'scene-introduction',
+            'camera'
           ]
         },
         {

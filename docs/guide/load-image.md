@@ -6,9 +6,9 @@ title: 加载影像图层的方法
 - 在初始化`viewer`的时候添加；
 - 通过`viewer.imageryLayers.addImageryProvider`方法添加。
 
-## 初始化viewer时添加影像
+## 初始化Viewer时添加影像
 
-在初始化`viewer`时可在第二个参数`Viewer.ConstructorOptions `中添加`imageryProvider`属性并提供一个`ImageryProvider`对象：
+在初始化`Viewer`时可在第二个参数`Viewer.ConstructorOptions `中添加`imageryProvider`属性并提供一个`ImageryProvider`对象：
 
 ```javascript
 const viewer = new Cesium.Viewer("cesiumContainer", {
