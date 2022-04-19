@@ -1,20 +1,13 @@
 ---
-title: Cesium ion 地形
+title: 地形简介
 ---
 
-Cesium默认是不包含地形的，如下图所示，在包含山脉的地区是看不到地形起伏的：
+## 地形简介
+
+Cesium默认是不包含地形的，准确的说应该是Cesium默认加载的地形是没有起伏效果的，，如下图所示，在包含山脉的地区是看不到地形起伏的：
 
 ![ts-01](/cesium-docs/assets/img/guide/ts-01.png)
 
-## Cesium地形
+默认使用的地形为”WGS84 Ellipsoid“：
 
-加载Cesium提供的地形代码如下：
-
-```javascript
-viewer.terrainProvider = Cesium.createWorldTerrain()
-```
-
-加载后的效果如下，能看到明显的起伏：
-
-![ts-02](/cesium-docs/assets/img/guide/ts-02.png)
-
+![ts-06](/cesium-docs/assets/img/guide/ts-06.png)

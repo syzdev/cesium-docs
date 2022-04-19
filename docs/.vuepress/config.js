@@ -62,10 +62,11 @@ module.exports = {
           title: '地形',
           collapsable: false,
           children: [
+            'terrain-system',
             'terrainProvider',
             'load-terrain',
             'terrainProvider-example',
-            'terrain-system',
+            'terrain-system-ci',
           ]
         },
 
