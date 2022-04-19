@@ -1,6 +1,6 @@
 ## 影像提供者 ImageryProvider
 
-除了图中列出的一些影像，开发者可以通过Cesium中的`ImageryProvider`影像提供者类创建所需的影像，截至2022年4月12日，在Cesium 1.92版本中共有14种`ImageryProvider`影像提供者类（不包括抽象类`ImageryProvider`）：
+除了图中列出的一些影像，开发者可以通过Cesium中的`ImageryProvider`影像提供者类创建所需的影像，截止2022年4月12日，在Cesium 1.92版本中共有14种`ImageryProvider`影像提供者类（不包括抽象类`ImageryProvider`）：
 
 - `ArcGisMapServerImageryProvider`：由ArcGIS Map Server提供的影像服务；
 - `BingMapsImageryProvider`：由Bing Map提供的影像服务；
@@ -17,4 +17,4 @@
 - `WebMapServiceImageryProvider`：由Web Map Service（WMS）提供的影像服务；
 - `WebMapTileServiceImageryProvider `：由Web Map Tile Service（WMTS）提供的影像服务。
 
-由于篇幅有限，下一节中仅介绍一些常用的`ImageryProvider`影像提供者。
+由于篇幅有限，后面小节中仅介绍一些常用的`ImageryProvider`影像提供者。

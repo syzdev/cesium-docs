@@ -61,18 +61,13 @@ module.exports = {
           title: '地形',
           collapsable: false,
           children: [
+            'terrainProvider',
+            'load-terrain',
+            'terrainProvider-example',
             'terrain-system',
           ]
         },
-        {
-          title: '实体 Entity',
-          collapsable: false,
-          children: [
-            'create-entity',
-            'box-entity',
-            'point-entity'
-          ]
-        }
+
       ],
       '/example/': [
         {
@@ -107,6 +102,15 @@ module.exports = {
           ]
         },
         {
+          title: '实体 Entity',
+          collapsable: false,
+          children: [
+            'create-entity',
+            'box-entity',
+            'point-entity'
+          ]
+        },
+        {
           title: '图形 Primitive',
           collapsable: false,
           children: [
@@ -119,13 +123,13 @@ module.exports = {
           ]
         },
         {
-          title: '事件 ScreenSpaceEventHandler',
+          title: '矢量数据 DataSource',
           collapsable: false,
           children: [
           ]
         },
         {
-          title: '矢量数据 DataSource',
+          title: '事件 ScreenSpaceEventHandler',
           collapsable: false,
           children: [
           ]

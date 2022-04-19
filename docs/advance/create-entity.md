@@ -1,10 +1,9 @@
----
-title: 实体简介
----
+
+## 实体简介
 
 ::: warning 注意
 
-该节中并不会讲解实体的所有属性，只是介绍在入门阶段所需要知道或了解的属性，若要深入了解某个实体的属性，可查阅[官方文档](https://cesium.com/learn/cesiumjs/ref-doc/Entity.html?classFilter=entity)。
+该节中并不会讲解实体的所有属性，只是介绍在入门阶段所需要知道或了解的属性，若要深入了解某个实体的属性，可查阅 [官方文档](https://cesium.com/learn/cesiumjs/ref-doc/Entity.html?classFilter=entity)。
 
 :::
 
