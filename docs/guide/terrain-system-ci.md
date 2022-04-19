@@ -14,3 +14,16 @@ viewer.terrainProvider = Cesium.createWorldTerrain()
 
 ![ts-02](/cesium-docs/assets/img/guide/ts-02.png)
 
+使用参数`requestWaterMask`还可以为虚拟地球的海面添加流动效果，代码如下：
+
+```javascript
+const viewer = new Cesium.Viewer("cesiumContainer")
+const terrainProvider = Cesium.createWorldTerrain({
+  requestWaterMask: true, // 请求水体效果所需要的海岸线数据
+});
+viewer.terrainProvider = terrainProvider;
+```
+
+效果如下：
+
+![ts-07](/cesium-docs/assets/img/guide/ts-07.gif)
