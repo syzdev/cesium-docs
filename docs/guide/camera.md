@@ -97,7 +97,7 @@ viewer.camera.flyTo({
 
 ### flyToBoundingSphere
 
-`flyToBoundingSphere`用于将相机定位到一个包围球（`boundingSphere`）的位置，`boundingSphere`是一个对象，包含包围球中心点的坐标和包围球半径两个参数，官方文档 [BoundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/BoundingSphere.html)：
+`flyToBoundingSphere`用于将相机定位到一个包围球`boundingSphere`的位置，`boundingSphere`是一个对象，包含包围球中心点的坐标和包围球半径两个参数，官方文档 [BoundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/BoundingSphere.html)：
 
 | 参数名称 | 类型         | 默认值            | 描述             |
 | -------- | ------------ | ----------------- | ---------------- |

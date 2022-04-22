@@ -55,7 +55,7 @@ viewer.scene.imageryLayers._layers[0].brightness = 2
 viewer.scene.imageryLayers._layers[0].contrast = 3
 ```
 
-::: details 点击查看在线 Cesium Demo
+::: details 点击查看在线示例：修改影像的透明度、明亮度和对比度
 <br/>
 
  <iframe  

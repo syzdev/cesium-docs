@@ -8,7 +8,7 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
 
 ![cbi-01](/cesium-docs/assets/img/guide/cbi-01.jpg)
 
-::: details 点击查看在线 Cesium Demo
+::: details 点击查看在线示例：Cesium Demo
 <br/>
 
  <iframe  
