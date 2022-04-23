@@ -20,8 +20,8 @@ viewer.terrainProvider = Cesium.createWorldTerrain()
 const viewer = new Cesium.Viewer("cesiumContainer")
 const terrainProvider = Cesium.createWorldTerrain({
   requestWaterMask: true, // 请求水体效果所需要的海岸线数据
-});
-viewer.terrainProvider = terrainProvider;
+})
+viewer.terrainProvider = terrainProvider
 ```
 
 效果如下：

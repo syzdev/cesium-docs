@@ -29,7 +29,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 const viewer = new Cesium.Viewer("cesiumContainer")
 const ArcGisTerrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
   url: 'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer',
-});
+})
 viewer.terrainProvider = ArcGisTerrainProvider
 ```
 

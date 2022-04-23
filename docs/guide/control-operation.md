@@ -15,9 +15,9 @@ title: 视图控件操作
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	geocoder: false // 隐藏查找位置
-});
+})
 ```
 
 ## 2 隐藏返回视角到初始位置
@@ -31,9 +31,9 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
     homeButton: false // 隐藏返回视角到初始位置
-});
+})
 ```
 
 ## 3 隐藏视角模式的选择
@@ -47,9 +47,9 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	sceneModePicker: false // 隐藏视角模式的选择
-});
+})
 ```
 
 ## 4 隐藏图层选择器
@@ -63,9 +63,9 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	baseLayerPicker: false // 隐藏图层选择器
-});
+})
 ```
 
 ## 5 隐藏帮助
@@ -79,9 +79,9 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	navigationHelpButton: false // 隐藏帮助
-});
+})
 ```
 
 ## 6 隐藏动画速度控制器
@@ -95,9 +95,9 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	animation: false // 隐藏动画速度控制器
-});
+})
 ```
 
 ## 7 隐藏版权信息
@@ -105,7 +105,7 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 隐藏版权信息暂时没有具体的属性，但是可以通过`viewer`对象操作DOM元素样式的`display`属性来实现隐藏效果，代码如下：
 
 ```javascript
-viewer._cesiumWidget._creditContainer.style.display = "none";
+viewer._cesiumWidget._creditContainer.style.display = "none"
 ```
 
 ## 8 隐藏时间轴
@@ -119,9 +119,9 @@ viewer._cesiumWidget._creditContainer.style.display = "none";
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	timeline: false // 隐藏时间轴
-});
+})
 ```
 
 ## 9 隐藏全屏按钮
@@ -135,7 +135,7 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 代码如下：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer", {
+const viewer = new Cesium.Viewer("cesiumContainer", {
 	fullscreenButton: false // 隐藏全屏按钮
-});
+})
 ```

@@ -29,7 +29,7 @@ viewer.imageryProvider = new Cesium.BingMapsImageryProvider({
   url: 'https://dev.virtualearth.net',
   key: 'xxx',
   mapStyle : Cesium.BingMapsStyle.AERIAL
-});
+})
 ```
 
 加载后的效果如下：
@@ -77,7 +77,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 ```javascript
 viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
   url: './data/worldimage.jpg'
-}));
+}))
 ```
 
 加载后的效果如下：

@@ -19,7 +19,7 @@
 const viewer = new Cesium.Viewer("cesiumContainer")
 const terrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
   url: 'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer',
-});
+})
 viewer.terrainProvider = terrainProvider
 ```
 
@@ -92,8 +92,8 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     callback: function (x, y, level) {
       return new Float32Array(32 * 32); // all zeros
     },
-  }),
-});
+  })
+})
 ```
 
 ## EllipsoidTerrainProvider

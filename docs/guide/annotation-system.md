@@ -28,7 +28,7 @@ viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvi
   style: "default",
   format: "image/jpeg",
   tileMatrixSetID: "GoogleMapsCompatible",
-}));
+}))
 ```
 
 加载后的效果如下：

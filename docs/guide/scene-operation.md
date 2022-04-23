@@ -11,7 +11,7 @@ title: 场景操作
 显示帧率的代码如下：
 
 ```javascript
-viewer.scene.debugShowFramesPerSecond = true //显示帧率
+viewer.scene.debugShowFramesPerSecond = true // 显示帧率
 ```
 
 ## 隐藏星空

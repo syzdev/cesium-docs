@@ -15,7 +15,7 @@ title: 视图 Viewer
   <body>
     <div id="cesiumContainer"></div>
     <script>
-      var viewer = new Cesium.Viewer("cesiumContainer");
+      const viewer = new Cesium.Viewer("cesiumContainer")
     </script>
   </body>
 ```
@@ -30,7 +30,7 @@ title: 视图 Viewer
 下面是Cesium场景初始化的核心代码：
 
 ```javascript
-var viewer = new Cesium.Viewer("cesiumContainer");
+const viewer = new Cesium.Viewer("cesiumContainer")
 ```
 
 ## Viewer的属性
