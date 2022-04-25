@@ -127,4 +127,56 @@ viewer.camera.flyToBoundingSphere(sphere)
  </iframe>
 :::
 
-### 
+
+## 缩放 zoom
+
+缩放 zoom 用于视角的缩放，相关方法如下，共有2个：
+
+- `zoomIn`：视角缩小，类似于鼠标滚轮向前滚动；
+- `zoomOut`：视角放大，类似于鼠标滚轮向后滚动。
+
+这2个方法都可以传递一个参数`amount`，表示缩放的距离：
+
+| 参数名称 | 类型     | 默认值                            | 描述       |
+| -------- | -------- | --------------------------------- | ---------- |
+| `amount` | `Number` | `defaultZoomAmount`，即`100000.0` | 缩放的距离 |
+
+::: details 点击查看在线示例：缩放 zoom 的方法
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/zoom.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+## 移动 move
+移动 move 用于在前后左右上下这六个方向上移动相机，相关方法如下，共有6个：
+- `moveForward`：向前移动相机；
+- `moveBackward`：向后移动相机；
+- `moveLeft`：向左移动相机；
+- `moveRight`：向右移动相机；
+- `moveUp`：向上移动相机
+- `moveDown`：向下移动相机；
+
+上述操作的示意图如下，可以将相机想象成一个正方体，正方体共有6个面，以上的每种操作都是朝着其中某个面的方向进行移动：
+
+![cmove](/cesium-docs/assets/img/guide/cmove.png)
+
+这类方法不会改变相机的朝向，只会改变相机的位置，这6个方法都可以传递一个参数`amount`，表示移动的距离：
+| 参数名称 | 类型     | 默认值                            | 描述       |
+| -------- | -------- | --------------------------------- | ---------- |
+| `amount` | `Number` | `defaultZoomAmount`，即`100000.0` | 缩放的距离 |
+
+::: details 点击查看在线示例：移动 move 的方法
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/move.html"  
+ frameborder=0 >
+ </iframe>
+:::
