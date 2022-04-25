@@ -6,7 +6,7 @@
 - 缩放 zoom：`zoomIn`和`zoomOut`，与 zoom 有关的方法类似于使用鼠标滚轮来操作场景进行缩小或放大；这类方法不会改变相机的朝向，只会改变相机的位置；
 - 移动 move ：`moveBackward`、`moveDown`、`moveForward`、`moveLeft`、`moveRight`和`moveUp`，与 move 有关的方法就是在前后左右上下这六个方向上移动相机，这类方法不会改变相机的朝向，只会改变相机的位置；
 - 视角 look ：`lookDown`、`lookLeft`、`lookRight`和`lookUp`，与 look 有关的方法就是在相机位置不变的情况下，调整相机镜头的上下左右四个方向朝向，这类方法不会改变相机的位置，只会改变相机的朝向；
-- 扭转 twist ：`twistLeft`和`twistRight`，与 twist 有关的方法就是在相机位置不变的情况下，调整相机镜头向左（逆时针）或向右（顺时针）扭转，这类方法不会改变相机的位置，只会改变相机的朝向；
+- 扭转 twist ：`twistLeft`和`twistRight`，与 twist 有关的方法就是在相机位置不变的情况下，调整相机视角向左（逆时针）或向右（顺时针）扭转，这类方法不会改变相机的位置，只会改变相机的朝向；
 - 旋转 rotate ：`rotateDown`、`rotateLeft`、`rotateRight`和`rotateUp`，与 rotate 有关的方法会根据提供的角度参数旋转相机视角，这类方法会改变相机的位置，也会改变相机的朝向；
 - 其他操作相机的方法：
   - `setView`直接将相机视角定位到某个位置；
@@ -177,7 +177,7 @@ viewer.camera.zoomOut(zoomOutAmount)
 这类方法不会改变相机的朝向，只会改变相机的位置，这6个方法都可以传递一个参数`amount`，表示移动的距离：
 | 参数名称 | 类型     | 默认值                            | 描述       |
 | -------- | -------- | --------------------------------- | ---------- |
-| `amount` | `Number` | `defaultMoveAmount`，即`100000.0` | 缩放的距离 |
+| `amount` | `Number` | `defaultMoveAmount`，即`100000.0` | 移动的距离 |
 
 移动 move 的使用方法如下：
 
@@ -213,11 +213,11 @@ viewer.camera.moveDown(moveAmount)
 
 ![clook](/cesium-docs/assets/img/guide/clook.png)
 
-这类方法不会改变相机的位置，只会改变相机的朝向，这4个方法都可以传递一个参数`amount`，表示视角调整的距离：
+这类方法不会改变相机的位置，只会改变相机的朝向，这4个方法都可以传递一个参数`amount`，表示视角调整的弧度：
 
 | 参数名称 | 类型     | 默认值                            | 描述       |
 | -------- | -------- | --------------------------------- | ---------- |
-| `amount` | `Number` | `defaultLookAmount`，即`Math.PI / 60.0`，转换为角度为`3°` | 缩放的角度 |
+| `amount` | `Number` | `defaultLookAmount`，即`Math.PI / 60.0`，转换为角度为`3°` | 视角调整的弧度 |
 
 由于参数`amount`需要指定一个弧度值，可以使用`Cesium.Math.toRadians()`方法将角度转换为弧度，则默认值`defaultLookAmount`等价于`Cesium.Math.toRadians(3)`，视角 look 的使用方法如下：
 
@@ -240,3 +240,72 @@ viewer.camera.lookRight(lookRadians)
  </iframe>
 :::
 
+## 扭转 twist
+
+扭转 twist 用于在相机位置不变的情况下，调整相机视角向左（逆时针）或向右（顺时针）扭转，相关方法如下，共有2个：
+
+- `twistLeft`：向左（逆时针）扭转相机视角；
+- `twistRight`：向右（顺时针）扭转相机视角。
+
+这类方法不会改变相机的位置，只会改变相机的朝向，这2个方法都可以传递一个参数`amount`，表示视角调整的弧度：
+
+| 参数名称 | 类型     | 默认值                                                    | 描述       |
+| -------- | -------- | --------------------------------------------------------- | ---------- |
+| `amount` | `Number` | `defaultLookAmount`，即`Math.PI / 60.0`，转换为角度为`3°` | 扭转的弧度 |
+
+与视角 look 类似，参数`amount`也是一个弧度值，可以使用`Cesium.Math.toRadians()`方法将角度转换为弧度，扭转 twist 的使用方法如下：
+
+```javascript
+const twistAmount = Cesium.Math.toRadians(10) // 10°
+viewer.camera.twistLeft(twistAmount)
+viewer.camera.twistRight(twistAmount)
+```
+
+::: details 点击查看在线示例：扭转 twist 的方法
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/twist.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+## 旋转 rotate
+与旋转 rotate 有关的方法会根据提供的角度参数旋转相机视角，相关方法如下，共有4个：
+- `rotateUp`：
+- `rotateDown`：
+- `rotateLeft`：
+- `rotateRight`：
+
+上述操作的示意图如下：
+
+![crotate](/cesium-docs/assets/img/guide/crotate.png)
+
+这类方法会改变相机的位置，也会改变相机的朝向，这4个方法都可以传递一个参数`angle`，表示视角旋转的角度：
+
+| 参数名称 | 类型     | 默认值                                      | 描述       |
+| -------- | -------- | ------------------------------------------- | ---------- |
+| `angle`  | `Number` | `defaultRotateAmount`，即`Math.PI / 3600.0` | 旋转的角度 |
+
+参数`angle`需要指定一个弧度制，可以使用`Cesium.Math.toRadians()`方法将角度转换为弧度，旋转 rotate 的使用方法如下：
+
+```javascript
+const rotateAngle = Cesium.Math.toRadians(10) // 10°
+viewer.camera.rotateUp(rotateAngle)
+viewer.camera.rotateDown(rotateAngle)
+viewer.camera.rotateLeft(rotateAngle)
+viewer.camera.rotateRight(rotateAngle)
+```
+
+::: details 点击查看在线示例：旋转 rotate 的方法
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/rotate.html"  
+ frameborder=0 >
+ </iframe>
+:::
