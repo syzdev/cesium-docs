@@ -141,6 +141,15 @@ viewer.camera.flyToBoundingSphere(sphere)
 | -------- | -------- | --------------------------------- | ---------- |
 | `amount` | `Number` | `defaultZoomAmount`，即`100000.0` | 缩放的距离 |
 
+缩放 zoom 的使用方法如下：
+
+```javascript
+const zoomInAmount = 1000000
+const zoomOutAmount = 2000000
+viewer.camera.zoomIn(zoomInAmount)
+viewer.camera.zoomOut(zoomOutAmount)
+```
+
 ::: details 点击查看在线示例：缩放 zoom 的方法
 
 <br/>
@@ -158,8 +167,8 @@ viewer.camera.flyToBoundingSphere(sphere)
 - `moveBackward`：向后移动相机；
 - `moveLeft`：向左移动相机；
 - `moveRight`：向右移动相机；
-- `moveUp`：向上移动相机
-- `moveDown`：向下移动相机；
+- `moveUp`：向上移动相机；
+- `moveDown`：向下移动相机。
 
 上述操作的示意图如下，可以将相机想象成一个正方体，正方体共有6个面，以上的每种操作都是朝着其中某个面的方向进行移动：
 
@@ -168,7 +177,19 @@ viewer.camera.flyToBoundingSphere(sphere)
 这类方法不会改变相机的朝向，只会改变相机的位置，这6个方法都可以传递一个参数`amount`，表示移动的距离：
 | 参数名称 | 类型     | 默认值                            | 描述       |
 | -------- | -------- | --------------------------------- | ---------- |
-| `amount` | `Number` | `defaultZoomAmount`，即`100000.0` | 缩放的距离 |
+| `amount` | `Number` | `defaultMoveAmount`，即`100000.0` | 缩放的距离 |
+
+移动 move 的使用方法如下：
+
+```javascript
+const moveAmount = 100000
+viewer.camera.moveForward(moveAmount)
+viewer.camera.moveBackward(moveAmount)
+viewer.camera.moveLeft(moveAmount)
+viewer.camera.moveRight(moveAmount)
+viewer.camera.moveUp(moveAmount)
+viewer.camera.moveDown(moveAmount)
+```
 
 ::: details 点击查看在线示例：移动 move 的方法
 
@@ -180,3 +201,42 @@ viewer.camera.flyToBoundingSphere(sphere)
  frameborder=0 >
  </iframe>
 :::
+
+## 视角 look
+视角 look 用于在相机位置不变的情况下，调整相机镜头的上下左右四个方向朝向，相关方法如下，共有4个：
+- `lookUp`：向上调整相机视角；
+- `lookDown`：向下调整相机视角；
+- `lookLeft`：向左调整相机视角；
+- `lookRight`：向右调整相机视角。
+
+上述操作的示意图如下：
+
+![clook](/cesium-docs/assets/img/guide/clook.png)
+
+这类方法不会改变相机的位置，只会改变相机的朝向，这4个方法都可以传递一个参数`amount`，表示视角调整的距离：
+
+| 参数名称 | 类型     | 默认值                            | 描述       |
+| -------- | -------- | --------------------------------- | ---------- |
+| `amount` | `Number` | `defaultLookAmount`，即`Math.PI / 60.0`，转换为角度为`3°` | 缩放的角度 |
+
+由于参数`amount`需要指定一个弧度值，可以使用`Cesium.Math.toRadians()`方法将角度转换为弧度，则默认值`defaultLookAmount`等价于`Cesium.Math.toRadians(3)`，视角 look 的使用方法如下：
+
+```javascript
+const lookRadians = Cesium.Math.toRadians(10) // 10°
+viewer.camera.lookUp(lookRadians)
+viewer.camera.lookDown(lookRadians)
+viewer.camera.lookLeft(lookRadians)
+viewer.camera.lookRight(lookRadians)
+```
+
+::: details 点击查看在线示例：视角 look 的方法
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/look.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
