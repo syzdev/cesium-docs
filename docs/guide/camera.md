@@ -1,4 +1,4 @@
-## 相机 Camera
+## 相机 [Camera](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html)
 
 在Cesium中通过相机`Camera`来描述和操作场景的视角，使用相机`Camera`操作场景的视角分为如下几类：
 
@@ -38,15 +38,19 @@ orientation: {
 
 ## 飞行 fly
 
-### flyHome
+### 飞行到初始位置 [flyHome](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyHome)
 
-`flyHome`的使用方法如下，官方文档 [Camera - flyHome](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyHome)：
+`flyHome`用于将相机视角飞行到初始相机视角（默认相机视角：`Cesium.Camera.DEFAULT_VIEW_RECTANGLE`），`flyHome`方法还可以为其指定一个`duration`参数，表示飞行的时间，单位为秒，若不指定该参数，Cesium会根据当前相机视角与目标相机视角（这里为初始相机视角）的距离来计算`duration`参数：
+
+| 参数名称   | 类型     | 描述                     |
+| ---------- | -------- | ------------------------ |
+| `duration` | `Number` | 飞行的过程时间，单位为秒 |
+
+`flyHome`的使用方法如下：
 
 ```javascript
 viewer.camera.flyHome()
 ```
-
-其效果是将相机视角定位到初始相机视角（默认相机视角：`Cesium.Camera.DEFAULT_VIEW_RECTANGLE`），`flyHome`方法还可以为其指定一个`duration`参数，表示飞行的时间，单位为秒，若不指定该参数，Cesium会根据当前相机视角与目标相机视角（这里为初始相机视角）的距离来计算`duration`参数。
 
 ::: details 点击查看在线示例：flyHome
 
@@ -59,9 +63,9 @@ viewer.camera.flyHome()
  </iframe>
 :::
 
-### flyTo
+### 飞行到指定位置 [flyTo](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyTo)
 
-`flyTo`是最为常用的一种相机操作方法，它有如下常用参数，官方文档 [Camera - flyTo](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyTo)：
+`flyTo`是最为常用的一种相机操作方法，用于将相机视角飞行到指定位置，它有如下常用参数：
 
 | 参数名称        | 参数类型                    | 描述                                 |
 | --------------- | --------------------------- | ------------------------------------ |
@@ -95,16 +99,16 @@ viewer.camera.flyTo({
  </iframe>
 :::
 
-### flyToBoundingSphere
+### 飞行到包围球 [flyToBoundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyToBoundingSphere)
 
-`flyToBoundingSphere`用于将相机定位到一个包围球`boundingSphere`的位置，`boundingSphere`是一个对象，包含包围球中心点的坐标和包围球半径两个参数，官方文档 [BoundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/BoundingSphere.html)：
+`flyToBoundingSphere`用于将相机飞行到一个包围球`boundingSphere`的位置，[boundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/BoundingSphere.html)是一个对象，包含包围球中心点的坐标和包围球半径两个参数 ：
 
 | 参数名称 | 类型         | 默认值            | 描述             |
 | -------- | ------------ | ----------------- | ---------------- |
 | `center` | `Cartesian3` | `Cartesian3.ZERO` | 包围球的中心坐标 |
 | `radius` | `Number`     | `0.0`             | 包围球的半径     |
 
-`flyToBoundingSphere`需要提供两个参数，一个是上面提到的`boundingSphere`对象，表示飞行的目的地，另一个参数是飞行参数，类似于`flyTo`的参数，其实`flyToBoundingSphere`和`flyTo`十分相似，只是表达目的地的方式不同，在`flyToBoundingSphere`中是通过`boundingSphere`对象来表达目的地，而`flyTo`中使用的是`destination`表达目的地。`flyToBoundingSphere`的使用方法如下，官方文档 [Camera - flyToBoundingSphere](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#flyToBoundingSphere)：
+`flyToBoundingSphere`需要提供两个参数，一个是上面提到的`boundingSphere`对象，表示飞行的目的地，另一个参数是飞行参数，类似于`flyTo`的参数，其实`flyToBoundingSphere`和`flyTo`十分相似，只是表达目的地的方式不同，在`flyToBoundingSphere`中是通过`boundingSphere`对象来表达目的地，而`flyTo`中使用的是`destination`表达目的地。`flyToBoundingSphere`的使用方法如下：
 
 ```javascript
 let center = new Cesium.Cartesian3(x, y, z) // 笛卡尔空间直角坐标系x，y，z
@@ -114,7 +118,7 @@ viewer.camera.flyToBoundingSphere(sphere)
 
 
 
-`flyToBoundingSphere`常用于将相机视角定位到某个局部坐标，如将相机视角定位到 BIM 模型的某个结构：
+`flyToBoundingSphere`常用于将相机视角飞行到某个局部坐标（位置），如将相机视角飞行到 BIM 模型中的某个结构：
 
 ::: details 点击查看在线示例：flyToBoundingSphere与BIM的应用
 
@@ -130,10 +134,10 @@ viewer.camera.flyToBoundingSphere(sphere)
 
 ## 缩放 zoom
 
-缩放 zoom 用于视角的缩放，相关方法如下，共有2个：
+缩放 zoom 用于相机视角的缩放，相关方法共有2个：
 
-- `zoomIn`：视角缩小，类似于鼠标滚轮向前滚动；
-- `zoomOut`：视角放大，类似于鼠标滚轮向后滚动。
+- `zoomIn`：[zoomIn](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#zoomIn)，视角缩小，类似于鼠标滚轮向前滚动；
+- `zoomOut`：[zoomOut](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#zoomOut)，视角放大，类似于鼠标滚轮向后滚动。
 
 这2个方法都可以传递一个参数`amount`，表示缩放的距离：
 
@@ -162,13 +166,13 @@ viewer.camera.zoomOut(zoomOutAmount)
 :::
 
 ## 移动 move
-移动 move 用于在前后左右上下这六个方向上移动相机，相关方法如下，共有6个：
-- `moveForward`：向前移动相机；
-- `moveBackward`：向后移动相机；
-- `moveLeft`：向左移动相机；
-- `moveRight`：向右移动相机；
-- `moveUp`：向上移动相机；
-- `moveDown`：向下移动相机。
+移动 move 用于在前后左右上下这六个方向上移动相机，相关方法共有6个：
+- `moveForward`：[moveForward](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveForward)，向前移动相机；
+- `moveBackward`：[moveBackward](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveBackward)，向后移动相机；
+- `moveLeft`：[moveLeft](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveLeft)，向左移动相机；
+- `moveRight`：[moveRight](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveRight)，向右移动相机；
+- `moveUp`：[moveUp](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveUp)，向上移动相机；
+- `moveDown`：[moveDown](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#moveDown)，向下移动相机。
 
 上述操作的示意图如下，可以将相机想象成一个正方体，正方体共有6个面，以上的每种操作都是朝着其中某个面的方向进行移动：
 
@@ -203,11 +207,11 @@ viewer.camera.moveDown(moveAmount)
 :::
 
 ## 视角 look
-视角 look 用于在相机位置不变的情况下，调整相机镜头的上下左右四个方向朝向，相关方法如下，共有4个：
-- `lookUp`：向上调整相机视角；
-- `lookDown`：向下调整相机视角；
-- `lookLeft`：向左调整相机视角；
-- `lookRight`：向右调整相机视角。
+视角 look 用于在相机位置不变的情况下，调整相机镜头的上下左右四个方向朝向，相关方法共有4个：
+- `lookUp`：[lookUp](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#lookUp)，向上调整相机视角；
+- `lookDown`：[lookDown](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#lookDown)，向下调整相机视角；
+- `lookLeft`：[lookLeft](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#lookLeft)，向左调整相机视角；
+- `lookRight`：[lookRight](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#lookRight)，向右调整相机视角。
 
 上述操作的示意图如下：
 
@@ -242,10 +246,10 @@ viewer.camera.lookRight(lookRadians)
 
 ## 扭转 twist
 
-扭转 twist 用于在相机位置不变的情况下，调整相机视角向左（逆时针）或向右（顺时针）扭转，相关方法如下，共有2个：
+扭转 twist 用于在相机位置不变的情况下，调整相机视角向左（逆时针）或向右（顺时针）扭转，相关方法共有2个：
 
-- `twistLeft`：向左（逆时针）扭转相机视角；
-- `twistRight`：向右（顺时针）扭转相机视角。
+- `twistLeft`：[twistLeft](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#twistLeft)，向左（逆时针）扭转相机视角；
+- `twistRight`：[twistRight](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#twistRight)，向右（顺时针）扭转相机视角。
 
 这类方法不会改变相机的位置，只会改变相机的朝向，这2个方法都可以传递一个参数`amount`，表示视角调整的弧度：
 
@@ -273,11 +277,11 @@ viewer.camera.twistRight(twistAmount)
 :::
 
 ## 旋转 rotate
-与旋转 rotate 有关的方法会根据提供的角度参数旋转相机视角，相关方法如下，共有4个：
-- `rotateUp`：
-- `rotateDown`：
-- `rotateLeft`：
-- `rotateRight`：
+旋转 rotate 用于根据提供的角度参数旋转相机视角，相关方法共有4个：
+- `rotateUp`：[rotateUp](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#rotateUp)，根据角度参数向上旋转相机视角；
+- `rotateDown`：[rotateDown](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#rotateDown)，根据角度参数向下旋转相机视角；
+- `rotateLeft`：[rotateLeft](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#rotateLeft)，根据角度参数向左旋转相机视角；
+- `rotateRight`：[rotateRight](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#rotateRight)，根据角度参数向右旋转相机视角。
 
 上述操作的示意图如下：
 
@@ -306,6 +310,100 @@ viewer.camera.rotateRight(rotateAngle)
  height=600 
  width=100% 
  src="https://syzdev.cn/cesium-docs-demo/camera/rotate.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+## 其他操作相机的方法
+### 视角设置 [setView](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#setView)
+
+`setView`用于将相机视角直接定位到某个位置，该方法不会有相机视角移动的动作，该方法的常用参数如下：
+
+| 参数名称      | 类型                        | 描述               |
+| ------------- | --------------------------- | ------------------ |
+| `destination` | `Cartesian3` 或 `Rectangle` | 相机视角定位的位置 |
+| `orientation` | `Object`                    | 相机视角的方向     |
+
+其中`destination`可以指定两种类型的值：
+
+- `Cartesian3`：笛卡尔空间直角坐标系，在Cesium中表示为`Cesium.Cartesian3.fromDegrees(lon, lat, hgt)`，其中`lon`、`lat`和`hgt`分别表示经度、纬度和高度；使用方法如下：
+
+```javascript
+viewer.camera.setView({
+  destination: Cesium.Cartesian3.fromDegrees(116.435314, 39.960521, 15000.0), // 设置位置，北京的坐标
+  orientation: {
+    heading: Cesium.Math.toRadians(20.0),
+    pitch: Cesium.Math.toRadians(-90.0),
+    roll: 0
+  }
+})
+```
+
+- `Rectangle`：矩形坐标范围，则Cesium中表示为`Cesium.Rectangle.fromDegrees(west, south, east, north)`，其中`west`、`south`、`east`和`north`分别表示西经，南纬，东经，北纬，如下图所示：
+
+![csetview](/cesium-docs/assets/img/guide/csetview.png)
+
+使用方法如下：
+
+```javascript
+viewer.camera.setView({
+    destination: Cesium.Rectangle.fromDegrees(0.0, 20.0, 10.0, 30.0), // west, south, east, north
+    orientation: {
+        heading: Cesium.Math.toRadians(20.0),
+        pitch: Cesium.Math.toRadians(-90.0),
+        roll: 0
+    }
+})
+```
+::: details 点击查看在线示例：setView
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/setView.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+### 视角锁定 [lookAt](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#lookAt)
+
+`lookAt`用于将相机视角锁定到目标位置，该方法不会有相机视角移动的动作，该方法的常用参数如下：
+
+| 参数名称 | 类型                              | 描述                 |
+| -------- | --------------------------------- | -------------------- |
+| `target` | `Cartesian3`                      | 相机视角锁定的位置   |
+| `offset` | `Cartesian3`或`HeadingPitchRange` | 相机视角的方向或偏移 |
+
+`lookAt`的使用方法如下：
+
+```javascript
+// 1. offset为Cartesian3
+const center = Cesium.Cartesian3.fromDegrees(116.391311, 39.90616, 1500) // 北京天安门
+viewer.camera.lookAt(center, new Cesium.Cartesian3(0.0, -4790.0, 3900.0))
+
+// 2. offset为HeadingPitchRange
+const center = Cesium.Cartesian3.fromDegrees(114.296870, 30.546479, 100) // 武汉黄鹤楼
+const heading = Cesium.Math.toRadians(50.0)
+const pitch = Cesium.Math.toRadians(-70.0)
+const range = 180.0
+viewer.camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, range))
+```
+
+使用`lookAt`后，相机视角将锁定到目标位置，若要解除相机视角锁定可执行如下代码：
+
+```javascript
+// 解除相机视角锁定
+viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY)
+```
+
+::: details 点击查看在线示例：lookAt
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/camera/lookAt.html"  
  frameborder=0 >
  </iframe>
 :::

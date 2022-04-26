@@ -27,7 +27,7 @@ viewer.imageryLayers.addImageryProvider(new Cesium.TileCoordinatesImageryProvide
 
 发现属性`_layers`为一个数组，其内容为添加的两个影像，一个为`WebMapTileServiceImageryProvider`，另一个为`TileCoordinatesImageryProvider`，正好对应了例子中添加的Arcgis影像服务和切片Tile坐标两种影像。
 
-## ImageryLayer 的属性
+## [ImageryLayer](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=imag#ImageryLayer) 的属性
 
 通过`ImageryLayer`实例化对象可以修改影像的外观属性，常见的可修改的属性见下表：
 

@@ -1,4 +1,4 @@
-## 地形提供者 TerrainProvider
+## 地形提供者 [TerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/TerrainProvider.html?classFilter=TerrainProvider#TerrainProvider)
 
 与影像类似，在Cesium中提供了一些地形提供者`TerrainProvider`用于加载各类地形，截止2022年4月12日，在Cesium 1.92版本中共有6种`TerrainProvider`地形提供者（不包括接口`TerrainProvider`）：
 

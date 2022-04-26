@@ -1,4 +1,4 @@
-## 影像集合 ImageryLayerCollection
+## 影像集合 [ImageryLayerCollection](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayerCollection.html?classFilter=ImageryLayerCollection#ImageryLayerCollection)
 
 在上一节“影像图层 ImageryLayer”中提到，影像是可以叠加的，输出`viewer.scene.imageryLayers`能看到叠加的多个影像图层，当需要修改某个影像的属性的时候，在上一节中是通过如下方法进行修改的：
 

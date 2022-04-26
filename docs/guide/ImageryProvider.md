@@ -1,4 +1,4 @@
-## 影像提供者 ImageryProvider
+## 影像提供者 [ImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/ImageryProvider.html?classFilter=ImageryProvider)
 
 除了图中列出的一些影像，开发者可以通过Cesium中的`ImageryProvider`影像提供者类创建所需的影像，截止2022年4月12日，在Cesium 1.92版本中共有14种`ImageryProvider`影像提供者类（不包括抽象类`ImageryProvider`）：
 

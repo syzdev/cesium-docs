@@ -2,7 +2,7 @@
 title: Cesium简介
 ---
 
-## Cesium简介
+## Cesium 简介
 
 Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebGL技术，能够在Web平台搭建虚拟地球及场景展示应用。如：
 

@@ -2,7 +2,7 @@
 title: 视图 Viewer
 ---
 
-## Viewer简介
+## 简介 [Viewer](https://cesium.com/learn/cesiumjs/ref-doc/Viewer.html?classFilter=view)
 在Cesium中`Viewer`是一切的开端，通过`new Cesium.Viewer(container, options)`来创建一个`Viewer`对象，可以把该对象理解为三维虚拟地球，在`Viewer`对象上的所有操作，可以看作是对三维虚拟地球的操作。
 
 日常Cesium开发中，几乎都是围绕着这个对象展开的。
@@ -33,8 +33,8 @@ title: 视图 Viewer
 const viewer = new Cesium.Viewer("cesiumContainer")
 ```
 
-## Viewer的属性
-`Viewer`对象主要包括如下属性，参考官方文档：[Viewer - Cesium Documentation](https://cesium.com/learn/cesiumjs/ref-doc/Viewer.html?classFilter=view)：
+## Viewer 的属性
+`Viewer`对象主要包括如下属性：
 
 - `camera`：相机属性，主要用于控制视角；
 - `widgets`（非属性）：`widgets`并非`Viewer`对象的属性，在这里特指所有控件：

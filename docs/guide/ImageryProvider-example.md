@@ -4,7 +4,7 @@ title: 影像提供者示例
 
 由于国外的地图服务往往拍摄生成的年份比较早，所以很多地区的影像和实际影像出入较大，所以推荐使用国内的影像服务。
 
-## ArcGisMapServerImageryProvider
+## [ArcGisMapServerImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/ArcGisMapServerImageryProvider.html?classFilter=imag#ArcGisMapServerImageryProvider)
 
 加载Arcgis影像服务的代码如下：
 
@@ -20,7 +20,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-03](/cesium-docs/assets/img/guide/is-03.png)
 
-## BingMapsImageryProvider
+## [BingMapsImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/BingMapsImageryProvider.html?classFilter=ImageryProvider#BingMapsImageryProvider)
 
 加载Bing影像服务的代码如下，其中`key`属性需要在[Bing maps Dev Center](https://www.bingmapsportal.com/Account/Register)中申请，按照页面提示申请即可：
 
@@ -36,7 +36,7 @@ viewer.imageryProvider = new Cesium.BingMapsImageryProvider({
 
 ![is-06](/cesium-docs/assets/img/guide/is-06.png)
 
-## GridImageryProvider
+## [GridImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/GridImageryProvider.html?classFilter=ImageryProvider#GridImageryProvider)
 
 加载Grid网格影像服务的代码如下：
 
@@ -50,7 +50,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-09](/cesium-docs/assets/img/guide/is-09.png)
 
-## OpenStreetMapImageryProvider
+## [OpenStreetMapImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/OpenStreetMapImageryProvider.html?classFilter=ImageryProvider#OpenStreetMapImageryProvider)
 
 加载OpenStreetMap影像服务的代码如下：
 
@@ -66,7 +66,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-10](/cesium-docs/assets/img/guide/is-10.png)
 
-## SingleTileImageryProvider
+## [SingleTileImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/SingleTileImageryProvider.html?classFilter=ImageryProvider#SingleTileImageryProvider)
 
 加载本地图片如下：
 
@@ -84,7 +84,7 @@ viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
 
 ![is-08](/cesium-docs/assets/img/guide/is-08.png)
 
-## TileCoordinatesImageryProvider
+## [TileCoordinatesImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/TileCoordinatesImageryProvider.html?classFilter=ImageryProvider#TileCoordinatesImageryProvider)
 
 加载TileCoordinates影像服务的代码如下：
 
@@ -95,7 +95,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 ```
 ![is-12](/cesium-docs/assets/img/guide/is-12.png)
 
-## UrlTemplateImageryProvider
+## [UrlTemplateImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=ImageryProvider#UrlTemplateImageryProvider)
 
 ###  Google影像服务
 
@@ -135,7 +135,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 ![is-05](/cesium-docs/assets/img/guide/is-05.png)
 
-## WebMapTileServiceImageryProvider
+## [WebMapTileServiceImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/WebMapTileServiceImageryProvider.html?classFilter=ImageryProvider#WebMapTileServiceImageryProvider)
 
 ### 天地图影像（推荐）
 

@@ -11,7 +11,7 @@
 
 由于篇幅有限，后面小节中仅介绍一些常用的`TerrainProvider`地形提供者。
 
-## ArcGISTiledElevationTerrainProvider
+## [ArcGISTiledElevationTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/ArcGISTiledElevationTerrainProvider.html?classFilter=ArcGISTiledElevationTerrainProvider#ArcGISTiledElevationTerrainProvider)
 
 加载Arcgis地形服务的代码如下：
 
@@ -27,7 +27,7 @@ viewer.terrainProvider = terrainProvider
 
 ![ts-04](/cesium-docs/assets/img/guide/ts-04.png)
 
-## CesiumTerrainProvider
+## [CesiumTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/CesiumTerrainProvider.html?classFilter=TerrainProvider#CesiumTerrainProvider)
 
 `CesiumTerrainProvider`用于加载自行发布的地形服务或其他地形服务商发布的地形服务。
 
@@ -80,7 +80,7 @@ viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
 
 ![ts-05](/cesium-docs/assets/img/guide/ts-05.png)
 
-## CustomHeightmapTerrainProvider
+## [CustomHeightmapTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/CustomHeightmapTerrainProvider.html?classFilter=TerrainProvider#CustomHeightmapTerrainProvider)
 
 加载自定义高程地形的代码如下，通过回调函数`callback`获取高程，这个`TerrainProvider`用的很少：
 
@@ -96,7 +96,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 })
 ```
 
-## EllipsoidTerrainProvider
+## [EllipsoidTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/EllipsoidTerrainProvider.html?classFilter=TerrainProvider#EllipsoidTerrainProvider)
 
 `EllipsoidTerrainProvider`是高程为 0 的地形，若初始化时不指定地形，那么默认的就是使用的该地形服务，加载`EllipsoidTerrainProvider`的代码如下：
 
