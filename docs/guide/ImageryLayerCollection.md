@@ -1,19 +1,19 @@
 ## 影像集合 [ImageryLayerCollection](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayerCollection.html?classFilter=ImageryLayerCollection#ImageryLayerCollection)
 
-在上一节“影像图层 ImageryLayer”中提到，影像是可以叠加的，输出`viewer.scene.imageryLayers`能看到叠加的多个影像图层，当需要修改某个影像的属性的时候，在上一节中是通过如下方法进行修改的：
+在上一节“影像图层 ImageryLayer”中提到，影像是可以叠加的，输出`viewer.imageryLayers`能看到叠加的多个影像图层，当需要修改某个影像的属性的时候，在上一节中是通过如下方法进行修改的：
 
 ```javascript
 // 修改影像的透明度、明亮度和对比度
-viewer.scene.imageryLayers._layers[0].alpha = 0.5
-viewer.scene.imageryLayers._layers[0].brightness = 2
-viewer.scene.imageryLayers._layers[0].contrast = 3
+viewer.imageryLayers._layers[0].alpha = 0.5
+viewer.imageryLayers._layers[0].brightness = 2
+viewer.imageryLayers._layers[0].contrast = 3
 ```
 
 上面代码中是通过`_layers[0]`获取到某个影像图层的，显然这种方法的语义化和可读性都是欠缺的。
 
 
 
-因此需要一个实例对象来管理所有的图层，能够以简单且语义化明确的接口来访问和操作影像图层，这个实例对象就是`ImageryLayerCollection`。其实在上一节中已经出现过`ImageryLayerCollection`，`viewer.scene.imageryLayers`本身就是一个`ImageryLayerCollection`对象：
+因此需要一个实例对象来管理所有的图层，能够以简单且语义化明确的接口来访问和操作影像图层，这个实例对象就是`ImageryLayerCollection`。其实在上一节中已经出现过`ImageryLayerCollection`，`viewer.imageryLayers`本身就是一个`ImageryLayerCollection`对象：
 
 ![ilc-01](/cesium-docs/assets/img/guide/ilc01.png)
 

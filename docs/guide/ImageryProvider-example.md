@@ -4,6 +4,17 @@ title: 影像提供者示例
 
 由于国外的地图服务往往拍摄生成的年份比较早，所以很多地区的影像和实际影像出入较大，所以推荐使用国内的影像服务。
 
+::: details 点击查看在线示例：影像提供者示例
+<br/>
+
+ <iframe  
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/imagery/ImageryExample.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 ## [ArcGisMapServerImageryProvider](https://cesium.com/learn/cesiumjs/ref-doc/ArcGisMapServerImageryProvider.html?classFilter=imag#ArcGisMapServerImageryProvider)
 
 加载Arcgis影像服务的代码如下：
@@ -150,7 +161,6 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     style: "default",
     format: "image/jpeg",
     tileMatrixSetID: "GoogleMapsCompatible",
-    show: false
   })
 })
 ```

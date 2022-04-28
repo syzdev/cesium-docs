@@ -40,7 +40,7 @@ viewer.imageryLayers.addImageryProvider(new Cesium.TileCoordinatesImageryProvide
 | 饱和度   | `saturation` | `1.0`  |
 | 伽马值   | `gamma`      | `1.0`  |
 
-在下面这个例子中，通过`viewer.scene.imageryLayers._layers[0]`获取到第一个影像图层，即Arcgis影像图层，再修改其`alpha`、`brightness`和`contrast`属性对其影像的透明度、明亮度和对比度等属性进行修改：
+在下面这个例子中，通过`viewer.imageryLayers._layers[0]`获取到第一个影像图层，即Arcgis影像图层，再修改其`alpha`、`brightness`和`contrast`属性对其影像的透明度、明亮度和对比度等属性进行修改：
 
 ```javascript
 const viewer = new Cesium.Viewer("cesiumContainer", {
@@ -50,9 +50,9 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 })
 
 // 修改影像的透明度、明亮度和对比度
-viewer.scene.imageryLayers._layers[0].alpha = 0.5
-viewer.scene.imageryLayers._layers[0].brightness = 2
-viewer.scene.imageryLayers._layers[0].contrast = 3
+viewer.imageryLayers._layers[0].alpha = 0.5
+viewer.imageryLayers._layers[0].brightness = 2
+viewer.imageryLayers._layers[0].contrast = 3
 ```
 
 ::: details 点击查看在线示例：修改影像的透明度、明亮度和对比度
@@ -61,7 +61,7 @@ viewer.scene.imageryLayers._layers[0].contrast = 3
  <iframe  
  height=600 
  width=100% 
- src="https://syzdev.cn/cesium-docs-demo/ImageryConfig.html"  
+ src="https://syzdev.cn/cesium-docs-demo/imagery/ImageryConfig.html"  
  frameborder=0 >
  </iframe>
 :::
