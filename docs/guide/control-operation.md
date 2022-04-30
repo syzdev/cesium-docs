@@ -4,6 +4,17 @@ title: 视图控件操作
 
 控件操作主要是对控件进行显示和隐藏的操作。
 
+::: details 点击查看在线示例：控件进行显示和隐藏的操作（不包含图层选择器）
+<br/>
+
+ <iframe  
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/interface/controlOperation.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 ## 1 隐藏查找位置
 
 隐藏查找位置的属性是`geocoder`，具体描述如下：

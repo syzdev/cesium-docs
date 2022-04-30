@@ -1,6 +1,5 @@
 ---
-title: 坐标系统
-sidebarDepth: 2
+title: Cesium 坐标系统
 ---
 
 在Cesium中添加任何实体都是需要位置信息的，由于Cesium中有几种坐标系统，因此在学习后面内容之前，了解一下Cesium中的坐标系统是有必要的。

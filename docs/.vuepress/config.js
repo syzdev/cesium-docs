@@ -100,6 +100,7 @@ module.exports = {
           title: '坐标系统',
           collapsable: false,
           children: [
+            'coordinate-introduction',
             'coordinate-system',
           ]
         },
