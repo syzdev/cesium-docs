@@ -13,4 +13,22 @@
   - `pick`：[pick](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#pick)，返回射线与地表相交的一个笛卡尔坐标，适用于拾取有地形高程的点，但不包括模型、倾斜摄影等表面高度，使用时需要开启深度检测。
 
 ## 示例
+### [viewer.scene.pick](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html#pick)
 
+`viewer.scene.pick`的使用方法如下，传入一个`Cartesian2`对象，若该位置有3D tiles对象则返回一个`Cesium3DTileFeature`对象，否则返回`undefined`：
+
+```javascript
+const feature = viewer.scene.pick(cartesian2)
+```
+
+该方法常用于3D tiles的拾取。
+::: details 点击查看在线示例：viewer.scene.pick拾取3D tiles
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/coordinate/scene-pick.html"  
+ frameborder=0 >
+ </iframe>
+:::
