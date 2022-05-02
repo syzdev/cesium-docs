@@ -59,7 +59,7 @@ Cesium中默认使用的坐标系为WGS84（World Geodetic System 1984）坐标�
 创建`Cartographic`坐标的方法如下：
 
 ```javascript
-let cartographic = new Cesium.Cartographic(longitude, latitude, height)
+const cartographic = new Cesium.Cartographic(longitude, latitude, height)
 ```
 
 其中`longitude`和`latitude`为弧度，`height`为高度，单位为米。这里的经纬度是用弧度表示的，经纬度其实就是角度，弧度即角度对应弧长是半径的倍数。
@@ -72,9 +72,9 @@ let cartographic = new Cesium.Cartographic(longitude, latitude, height)
 
 ```javascript
 // 经纬度转弧度
-let radians = Cesium.Math.toRadians(degrees) 
+const radians = Cesium.Math.toRadians(degrees) 
 // 弧度转经纬度
-let degress = Cesium.Math.toDegrees(radians) 
+const degress = Cesium.Math.toDegrees(radians) 
 ```
 
 也可以使用`Cesium.Cartographic.fromDegrees`方法直接传入经纬度坐标创建`Cartographic`对象：
@@ -82,6 +82,4 @@ let degress = Cesium.Math.toDegrees(radians)
 ```javascript
 const cartographic = Cesium.Cartographic.fromDegrees(longitude, latitude, height)
 ```
-
-## 坐标转换
 

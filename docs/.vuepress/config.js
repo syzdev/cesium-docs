@@ -102,6 +102,8 @@ module.exports = {
           children: [
             'coordinate-introduction',
             'coordinate-system',
+            'coordinate-pick',
+            'coordinate-trans',
           ]
         },
         {
