@@ -21,7 +21,19 @@
 const feature = viewer.scene.pick(cartesian2)
 ```
 
-该方法常用于3D tiles的拾取。
+该方法常用于3D tiles的拾取，如改变拾取3D tiles对象的颜色：
+
+```javascript
+// 定义一个点击事件
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction(function(movement) {
+    const feature = scene.pick(movement.position);
+    if (feature instanceof Cesium.Cesium3DTileFeature) {
+        feature.color = Cesium.Color.RED; // 将拾取到的3D tiles颜色修改为红色
+    }
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
 ::: details 点击查看在线示例：viewer.scene.pick拾取3D tiles
 
 <br/>
