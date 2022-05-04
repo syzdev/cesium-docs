@@ -1,6 +1,6 @@
 ## Cesium 位置拾取
 
-在Cesium中，想要获取某个对象（某个坐标点，或者某个实体），需要使用`pick`方法，在Cesium中有很多与`pick`相关方法，但常见的方法及区别如下：
+在Cesium中，想要获取某个对象（某个坐标点，或者某个实体），需要使用`pick`类方法，在Cesium中有很多与`pick`相关方法，但常见的方法及区别如下：
 
 - `viewer.scene`对象下的：
   - `pick`：[pick](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html#pick)，根据窗口坐标，返回拾取顶端的具有`primitive`属性的一个对象`Cesium3DTileFeature`，该方法适用于拾取一个3D tiles对象，并修改该3D tiles对象的某个属性，如实现点击3D tiles高亮的功能；
@@ -15,7 +15,7 @@
 ## 示例
 ### [viewer.scene.pick](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html#pick)
 
-`viewer.scene.pick`的使用方法如下，传入一个`Cartesian2`对象，若该位置有3D tiles对象则返回一个`Cesium3DTileFeature`对象，否则返回`undefined`：
+`viewer.scene.pick`的使用方法如下，传入一个`Cartesian2`对象，若该窗口位置有3D tiles对象则返回一个`Cesium3DTileFeature`对象，否则返回`undefined`：
 
 ```javascript
 const feature = viewer.scene.pick(cartesian2)
@@ -41,6 +41,24 @@ handler.setInputAction(function(movement) {
  height=600 
  width=100% 
  src="https://syzdev.cn/cesium-docs-demo/coordinate/scene-pick.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+### [viewer.scene.drillPick](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene#drillPick)
+
+`viewer.scene.drillPick`的使用方法如下，传入一个`Cartesian2`对象，返回该窗口位置下所有具有`primitive`属性的一个对象`Cesium3DTileFeature`集合：
+
+```javascript
+const featureArray = viewer.scene.drillPick(cartesian2)
+```
+::: details 点击查看在线示例：viewer.scene.drillPick拾取3D tiles个数
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/coordinate/scene-drillPick.html"  
  frameborder=0 >
  </iframe>
 :::
