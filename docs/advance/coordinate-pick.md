@@ -62,3 +62,26 @@ const featureArray = viewer.scene.drillPick(cartesian2)
  frameborder=0 >
  </iframe>
 :::
+
+### [viewer.scene.pickPosition](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene#pickPosition)
+
+`viewer.scene.pickPosition`的使用方法如下，传入一个`Cartesian2`对象，从场景的深度缓冲区中拾取相应的位置，最后返回笛卡尔`Cartesian3`坐标，拾取的高程可能不准确。
+
+```javascript
+// 定义一个事件，鼠标左键点击地球pickPosition拾取Cartesian3对象
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction((movement) => {
+  const pos = viewer.scene.pickPosition(movement.position)
+  console.log(pos)
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK)
+```
+::: details 点击查看在线示例：viewer.scene.pickPosition拾取Cartesian3对象
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/coordinate/scene-pickPosition.html"  
+ frameborder=0 >
+ </iframe>
+:::
