@@ -7,7 +7,7 @@
   - `drillpick`：[drillpick](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html#drillPick)，根据窗口坐标，返回窗口坐标位置处的所有具有`primitive`属性的一个对象`Cesium3DTileFeature`集合，集合中的对象按其在场景中的视觉顺序（从前到后）排序。
   - `pickPosition`：[pickPosition](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html#pickPosition)，根据窗口坐标，从场景的深度缓冲区中拾取相应的位置，最后返回笛卡尔坐标，拾取的高程可能不准确。
 - viewer.camera对象下的：
-  - `getPickRay`：[getPickRay](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#getPickRay)，在相机的位置创建一个射线，取射线与窗口坐标的交点，返回一个笛卡尔坐标，适用于选取地表坐标，不包括模型、倾斜摄影等表面高度。
+  - `getPickRay`：[getPickRay](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#getPickRay)，在相机的位置创建一个射线，取射线与窗口坐标的交点，以笛卡尔坐标的形式返回射线的起点和方向，适用于选取地表坐标，不包括模型、倾斜摄影等表面高度。
   - `pickEllipsoid`：[pickEllipsoid](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#pickEllipsoid)，返回椭圆球体表面的一个笛卡尔坐标，适用于裸球表面的选取，是基于数学模型的椭圆球体。
 - viewer.globe对象下的：
   - `pick`：[pick](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#pick)，返回射线与地表相交的一个笛卡尔坐标，适用于拾取有地形高程的点，但不包括模型、倾斜摄影等表面高度，使用时需要开启深度检测。
@@ -71,8 +71,8 @@ const featureArray = viewer.scene.drillPick(cartesian2)
 // 定义一个事件，鼠标左键点击地球pickPosition拾取Cartesian3对象
 const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
 handler.setInputAction((movement) => {
-  const pos = viewer.scene.pickPosition(movement.position)
-  console.log(pos)
+  const cartesian3 = viewer.scene.pickPosition(movement.position)
+  console.log(cartesian3)
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK)
 ```
 ::: details 点击查看在线示例：viewer.scene.pickPosition拾取Cartesian3对象
@@ -82,6 +82,28 @@ handler.setInputAction((movement) => {
  height=600 
  width=100% 
  src="https://syzdev.cn/cesium-docs-demo/coordinate/scene-pickPosition.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+### [getPickRay](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=cam#getPickRay)
+`viewer.camera.getPickRay`的使用方法如下，传入一个`Cartesian2`对象，在相机的位置创建一个射线 [Ray](https://cesium.com/learn/cesiumjs/ref-doc/Ray.html)，取射线与窗口坐标的交点，以笛卡尔坐标的形式返回射线的起点和方向。
+```javascript
+// 定义一个事件，鼠标左键点击地球getPickRay拾取Cartesian3对象
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction((movement) => {
+    const ray = viewer.camera.getPickRay(movement.position)
+    console.log(ray)
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK)
+```
+
+::: details 点击查看在线示例：viewer.camera.getPickRay拾取射线
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/coordinate/camera.getPickRay.html"  
  frameborder=0 >
  </iframe>
 :::
