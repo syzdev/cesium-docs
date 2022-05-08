@@ -86,14 +86,14 @@ handler.setInputAction((movement) => {
  </iframe>
 :::
 
-### [getPickRay](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=cam#getPickRay)
+### [viewer.camera.getPickRay](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=cam#getPickRay)
 `viewer.camera.getPickRay`的使用方法如下，传入一个`Cartesian2`对象，在相机的位置创建一个射线 [Ray](https://cesium.com/learn/cesiumjs/ref-doc/Ray.html)，取射线与窗口坐标的交点，以笛卡尔坐标的形式返回射线的起点和方向。
 ```javascript
 // 定义一个事件，鼠标左键点击地球getPickRay拾取Cartesian3对象
 const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
 handler.setInputAction((movement) => {
-    const ray = viewer.camera.getPickRay(movement.position)
-    console.log(ray)
+  const ray = viewer.camera.getPickRay(movement.position)
+  console.log(ray)
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK)
 ```
 
@@ -104,6 +104,31 @@ handler.setInputAction((movement) => {
  height=600 
  width=100% 
  src="https://syzdev.cn/cesium-docs-demo/coordinate/camera.getPickRay.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
+### [viewer.camera.pickEllipsoid](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=cam#pickEllipsoid)
+
+`viewer.camera.pickEllipsoid`的使用方法如下，传入一个`Cartesian2`对象和一个`	Ellipsoid`对象，返回椭圆球体表面的一个笛卡尔坐标，适用于裸球表面的选取，是基于数学模型的椭圆球体。
+
+```javascript
+// 定义一个事件，鼠标左键点击地球getPickRay拾取Cartesian3对象
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction((movement) => {
+  const ellipsoid = viewer.scene.globe.ellipsoid
+  const cartesian3 = viewer.camera.pickEllipsoid(movement.position, ellipsoid)
+  console.log(cartesian3)
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK)
+```
+
+::: details 点击查看在线示例：viewer.camera.pickEllipsoid
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/coordinate/camera.pickEllipsoid.html"  
  frameborder=0 >
  </iframe>
 :::
