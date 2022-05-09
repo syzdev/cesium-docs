@@ -102,7 +102,6 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 ```javascript
 const viewer = new Cesium.Viewer("cesiumContainer")
-const ellipsoidProvider = new Cesium.EllipsoidTerrainProvider()
-viewer.terrainProvider = ellipsoidProvider
+viewer.terrainProvider = new Cesium.EllipsoidTerrainProvider()
 ```
 

@@ -27,3 +27,14 @@ viewer.terrainProvider = terrainProvider
 效果如下：
 
 ![ts-07](/cesium-docs/assets/img/guide/ts-07.gif)
+
+::: details 点击查看在线示例：Cesium ion 地形水面效果
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/terrain/waterMask.html"  
+ frameborder=0 >
+ </iframe>
+:::

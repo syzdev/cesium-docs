@@ -19,7 +19,7 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Cesium简介和环境搭建',
+          title: 'Cesium 简介和环境搭建',
           collapsable: false,
           children: [
             'cesium-brief-introduction',
@@ -97,6 +97,17 @@ module.exports = {
       ],
       '/advance/': [
         {
+          title: 'Cesium 事件',
+          collapsable: false,
+          children: [
+            'event-introduction',
+            'mouse-keyboard-event',
+            'camera-event',
+            'data-load-event',
+            'scene-load-event'
+          ]
+        },
+        {
           title: '坐标系统',
           collapsable: false,
           children: [
@@ -129,12 +140,6 @@ module.exports = {
         },
         {
           title: '矢量数据 DataSource',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: '事件 ScreenSpaceEventHandler',
           collapsable: false,
           children: [
           ]
