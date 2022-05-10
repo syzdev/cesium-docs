@@ -27,7 +27,7 @@ const feature = viewer.scene.pick(cartesian2)
 // 定义一个点击事件
 const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
 handler.setInputAction(function(movement) {
-    const feature = scene.pick(movement.position);
+    const feature = viewer.scene.pick(movement.position);
     if (feature instanceof Cesium.Cesium3DTileFeature) {
         feature.color = Cesium.Color.RED; // 将拾取到的3D tiles颜色修改为红色
     }

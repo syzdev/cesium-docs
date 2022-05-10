@@ -11,8 +11,9 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/cesium-brief-introduction' },
-      { text: '进阶', link: '/advance/coordinate-system' },
+      { text: '进阶', link: '/advance/event-introduction' },
       { text: '案例', link: '/example/pick-coordinates' },
+      { text: '扩展', link: '/extend/model-data' },
       { text: '关于', link: '/about/' },
       { text: 'Github', link: 'https://github.com/syzdev/cesium-docs' },
     ],
@@ -21,19 +22,12 @@ module.exports = {
         {
           title: 'Cesium 简介和环境搭建',
           collapsable: false,
-          children: [
-            'cesium-brief-introduction',
-            'hello-cesium',
-          ]
+          children: ['cesium-brief-introduction', 'hello-cesium'],
         },
         {
           title: '视图与场景',
           collapsable: false,
-          children: [
-            'viewer-introduction',
-            'scene-introduction',
-            'camera'
-          ]
+          children: ['viewer-introduction', 'scene-introduction', 'camera'],
         },
         {
           title: '界面操作',
@@ -43,7 +37,7 @@ module.exports = {
             'control-operation',
             'cesium-widget',
             'scene-operation',
-          ]
+          ],
         },
         {
           title: '影像和标注',
@@ -55,8 +49,8 @@ module.exports = {
             'ImageryProvider-example',
             'ImageryLayer',
             'ImageryLayerCollection',
-            'annotation-system'
-          ]
+            'annotation-system',
+          ],
         },
         {
           title: '地形',
@@ -67,9 +61,8 @@ module.exports = {
             'load-terrain',
             'terrainProvider-example',
             'terrain-system-ci',
-          ]
+          ],
         },
-
       ],
       '/example/': [
         {
@@ -80,20 +73,18 @@ module.exports = {
             'coordinate-transform',
             'zoom-control',
             '3dtiles-control',
-          ]
+          ],
         },
         {
           title: '性能优化',
           collapsable: false,
-          children: [
-          ]
+          children: [],
         },
         {
           title: '官方案例汇总',
           collapsable: false,
-          children: [
-          ]
-        }
+          children: [],
+        },
       ],
       '/advance/': [
         {
@@ -104,8 +95,8 @@ module.exports = {
             'mouse-keyboard-event',
             'camera-event',
             'data-load-event',
-            'scene-load-event'
-          ]
+            'scene-load-event',
+          ],
         },
         {
           title: '坐标系统',
@@ -115,36 +106,36 @@ module.exports = {
             'coordinate-system',
             'coordinate-pick',
             'coordinate-trans',
-          ]
+          ],
         },
         {
           title: '实体 Entity',
           collapsable: false,
-          children: [
-            'create-entity',
-            'box-entity',
-            'point-entity'
-          ]
+          children: ['create-entity', 'box-entity', 'point-entity'],
         },
         {
           title: '图形 Primitive',
           collapsable: false,
-          children: [
-          ]
+          children: [],
         },
         {
           title: '模型 glTF / 3DTiles',
           collapsable: false,
-          children: [
-          ]
+          children: [],
         },
         {
           title: '矢量数据 DataSource',
           collapsable: false,
-          children: [
-          ]
+          children: [],
         },
-      ]
+      ],
+      '/extend/': [
+        {
+          title: '外部数据类型',
+          collapsable: false,
+          children: ['model-data'],
+        },
+      ],
     },
   },
   plugins: {
@@ -158,7 +149,7 @@ module.exports = {
         {
           type: 'title',
           content: '内容正在持续更新中，敬请关注。',
-          style: 'text-aligin: center;'
+          style: 'text-aligin: center;',
         },
       ],
       // footer: [
@@ -168,9 +159,9 @@ module.exports = {
       //     link: 'https://syzdev.gitee.io/cesium-docs/'
       //   },
       // ]
-    }
+    },
   },
   markdown: {
-    lineNumbers: true
-  }
+    lineNumbers: true,
+  },
 }

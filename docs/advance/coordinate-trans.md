@@ -19,6 +19,25 @@ const cartesian2 = Cesium.SceneTransforms.wgs84ToWindowCoordinates(viewer.scene,
 
 ### 笛卡尔二维转三维：[Cartesian2](https://cesium.com/learn/cesiumjs/ref-doc/Cartesian2.html?classFilter=Cartesian)转[Cartesian3](https://cesium.com/learn/cesiumjs/ref-doc/Cartesian3.html?classFilter=Cartesian)
 
+根据上一节“Cesium 位置拾取”中的内容可知，以下三种方法可以传入一个`cartesian2`对象参数再将其转换为`cartesian3`对象：
+- `viewer.camera.pickEllipsoid`；
+- `viewer.scene.pickPosition`；
+- `viewer.globe.pick`。
+
+转换方法如下：
+
+```javascript
+// viewer.camera.pickEllipsoid
+const cartesain3 = viewer.camera.pickEllipsoid(cartesian2) // Cartesian2 转 Cartesian3
+
+// viewer.scene.pickPosition
+const cartesian3 = viewer.scene.pickPosition(cartesian2) // Cartesian2 转 Cartesian3
+
+// viewer.globe.pick
+const ray = viewer.camera.getPickRay(cartesian2) // 取相机与屏幕的射线
+const cartesian3 = globe.pick(ray, viewer.scene) // Cartesian2 转 Cartesian3
+```
+
 ### 笛卡尔空间直角坐标与WGS84转换：[Cartesian3](https://cesium.com/learn/cesiumjs/ref-doc/Cartesian3.html?classFilter=Cartesian)与[Cartographic](https://cesium.com/learn/cesiumjs/ref-doc/Cartographic.html?classFilter=Cartographic)转换
 
 1. Cartesian3转Cartographic
