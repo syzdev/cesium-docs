@@ -70,7 +70,6 @@ module.exports = {
           collapsable: false,
           children: [
             'pick-coordinates',
-            'coordinate-transform',
             'zoom-control',
             '3dtiles-control',
           ],
