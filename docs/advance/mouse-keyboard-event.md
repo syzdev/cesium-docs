@@ -125,6 +125,17 @@ handler.setInputAction((positions) => {
 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE)
 ```
 
+::: details 点击查看在线示例：MotionEventCallback(event)
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/event/MotionEventCallback.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 ### [WheelEventCallback(delta)](https://cesium.com/learn/cesiumjs/ref-doc/ScreenSpaceEventHandler.html#.WheelEventCallback)
 
 该回调函数会返回一个`delta`值，为鼠标滚轮滚动的值：
@@ -141,4 +152,13 @@ handler.setInputAction((delta) => {
   // delta为鼠标滚轮滚动的值
 }, Cesium.ScreenSpaceEventType.WHEEL)
 ```
+::: details 点击查看在线示例：WheelEventCallback(event)
 
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/event/WheelEventCallback.html"  
+ frameborder=0 >
+ </iframe>
+:::
