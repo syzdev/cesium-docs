@@ -70,6 +70,15 @@ handler.setInputAction((movement) => {
 
 至于在回调函数中内做些什么，是由触发的回调函数所决定的。
 
+在方法描述中可以看到键盘事件修饰符`modifier`为可选项，在Cesium中键盘事件类型是无法单独使用的，需要和鼠标事件类型一起使用，如下代码表示按住键盘`CTRL`键并且点击鼠标左键才能触发事件回调函数：
+
+```javascript
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction((movement) => {
+  // do something
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK, Cesium.KeyboardEventModifier.CTRL)
+```
+
 ## 事件回调函数
 
 由于触发事件的类型各异，所以相应的也有不同的事件回调来处理不同的事件，事件回调函数分为如下几种：
@@ -162,3 +171,19 @@ handler.setInputAction((delta) => {
  frameborder=0 >
  </iframe>
 :::
+
+## 移除事件 [removeInputAction](https://cesium.com/learn/cesiumjs/ref-doc/ScreenSpaceEventHandler.html?classFilter=Space#removeInputAction)
+定义Cesium中的事件往往是执行某一个具体的操作，如鼠标点击拾取，当操作执行结束后需要移除该事件，避免对后续操作造成影响，移除事件的方法为`removeInputAction`，该方法的描述如下：
+
+| 参数名称   | 类型                                                         | 描述                   |
+| ---------- | ------------------------------------------------------------ | ---------------------- |
+| `type`     | [ScreenSpaceEventType](https://cesium.com/learn/cesiumjs/ref-doc/global.html#ScreenSpaceEventType) | 屏幕空间事件类型       |
+| `modifier` | [KeyboardEventModifier](https://cesium.com/learn/cesiumjs/ref-doc/global.html#KeyboardEventModifier) | 可选项，键盘事件修饰符 |
+
+使用方法如下：
+
+```javascript
+// 移除鼠标左键单击事件
+handler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK)
+```
+
