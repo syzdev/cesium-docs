@@ -14,7 +14,7 @@ const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
 
 ## 屏幕空间事件类型 [ScreenSpaceEventType](https://cesium.com/learn/cesiumjs/ref-doc/global.html#ScreenSpaceEventType)
 
-屏幕空间事件类型`ScreenSpaceEventType` 分为两类，因为Cesium的操作分为鼠标操作和触摸屏操作两种模式：
+因为Cesium的操作分为鼠标操作和触摸屏操作两种模式，所以屏幕空间事件类型`ScreenSpaceEventType` 分为两类：
 
 1. 鼠标操作
 
