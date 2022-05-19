@@ -84,6 +84,13 @@ module.exports = {
           collapsable: false,
           children: [],
         },
+        {
+          title: '前端框架集成',
+          collapsable: false,
+          children: [
+            'vue-integration'
+          ],
+        },
       ],
       '/advance/': [
         {
