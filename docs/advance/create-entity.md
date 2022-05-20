@@ -7,7 +7,33 @@
 
 :::
 
-实体（entity）是Cesium系统中自带的创建图形的方法，通过该方法可以在场景中创建点、线、面、多边形、立方体、圆等基本图形。下面以创建一个盒子为例，介绍创建一个实体的基本方法：
+实体（entity）是Cesium系统中自带的创建图形的方法，通过该方法可以在场景中创建点、线、面、多边形、立方体、圆等基本图形。截止2022年5月19日，Cesium版本1.93，在Cesium中支持17种实体：
+
+| 实体名称         | 类型                                                         | 描述                                                       | 图例                                                         |
+| ---------------- | ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| `billboard`      | [BillboardGraphics](https://cesium.com/learn/cesiumjs/ref-doc/BillboardGraphics.html) | 广告牌，可以自定义为图片或文字                             | <img src="/cesium-docs/assets/img/advance/entity-billboard.png" ></img> |
+| `box`            | [BoxGraphics](https://cesium.com/learn/cesiumjs/ref-doc/BoxGraphics.html) | 盒子                                                       | <img src="/cesium-docs/assets/img/advance/entity-box.png" ></img> |
+| `corridor`       | [CorridorGraphics](https://cesium.com/learn/cesiumjs/ref-doc/CorridorGraphics.html) | `corridor`直译为走廊，实际上是将多个点相连形成的一种实体。 | <img src="/cesium-docs/assets/img/advance/entity-corridor.png" ></img> |
+| `cylinder`       | [CylinderGraphics](https://cesium.com/learn/cesiumjs/ref-doc/CylinderGraphics.html) | 圆柱体，可以通过设置上下半径生成锥体                       | <img src="/cesium-docs/assets/img/advance/entity-cylinder.png" ></img> |
+| `ellipse`        | [EllipseGraphics](https://cesium.com/learn/cesiumjs/ref-doc/EllipseGraphics.html) | 椭圆                                                       | <img src="/cesium-docs/assets/img/advance/entity-ellipse.png" ></img> |
+| `ellipsoid`      | [EllipsoidGraphics](https://cesium.com/learn/cesiumjs/ref-doc/EllipsoidGraphics.html) | 椭球体                                                     | <img src="/cesium-docs/assets/img/advance/entity-ellipsoid.png" ></img> |
+| `label`          | [LabelGraphics](https://cesium.com/learn/cesiumjs/ref-doc/LabelGraphics.html) | 标签                                                       | <img src="/cesium-docs/assets/img/advance/entity-label.png" ></img> |
+| `model`          | [ModelGraphics](https://cesium.com/learn/cesiumjs/ref-doc/ModelGraphics.html) | 模型，主要用于加载glTF模型                                 | <img src="/cesium-docs/assets/img/advance/entity-model.png" ></img> |
+| `tileset`        | [Cesium3DTilesetGraphics](https://cesium.com/learn/cesiumjs/ref-doc/Cesium3DTilesetGraphics.html) | 瓦片集合，主要用于加载3D tiles模型                         | <img src="/cesium-docs/assets/img/advance/entity-tileset.png" ></img> |
+| `path`           | [PathGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PathGraphics.html) | 路径，实际上是将大量的点连起来绘制的一种线条实体           | <img src="/cesium-docs/assets/img/advance/entity-path.png" ></img> |
+| `plane`          | [PlaneGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PlaneGraphics.html) | 平面                                                       | <img src="/cesium-docs/assets/img/advance/entity-plane.png" ></img> |
+| `point`          | [PointGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PointGraphics.html) | 点                                                         | <img src="/cesium-docs/assets/img/advance/entity-point.png" ></img> |
+| `polygon`        | [PolygonGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PolygonGraphics.html) | 多边形                                                     | <img src="/cesium-docs/assets/img/advance/entity-polygon.png" ></img> |
+| `polyline`       | [PolylineGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PolylineGraphics.html) | 折线                                                       | <img src="/cesium-docs/assets/img/advance/entity-polyline.png" ></img> |
+| `polylineVolume` | [PolylineVolumeGraphics](https://cesium.com/learn/cesiumjs/ref-doc/PolylineVolumeGraphics.html) | 折线体                                                     | <img src="/cesium-docs/assets/img/advance/entity-polylineVolume.png" ></img> |
+| `rectangle`      | [RectangleGraphics](https://cesium.com/learn/cesiumjs/ref-doc/RectangleGraphics.html) | 矩形                                                       | <img src="/cesium-docs/assets/img/advance/entity-rectangle.png" ></img> |
+| `wall`           | [WallGraphics](https://cesium.com/learn/cesiumjs/ref-doc/WallGraphics.html) | 墙                                                         | <img src="/cesium-docs/assets/img/advance/entity-wall.png" ></img> |
+
+
+
+## 简单示例
+
+下面以创建一个盒子为例，介绍创建一个实体的基本方法：
 
 ```javascript
 var boxEntity = viewer.entities.add({
