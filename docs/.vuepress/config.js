@@ -122,7 +122,9 @@ module.exports = {
         {
           title: '图形 Primitive',
           collapsable: false,
-          children: [],
+          children: [
+            'primitive-introduction'
+          ],
         },
         {
           title: '模型 glTF / 3DTiles',
