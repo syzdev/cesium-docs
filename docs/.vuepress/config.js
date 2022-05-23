@@ -129,7 +129,10 @@ module.exports = {
         {
           title: '模型 glTF / 3DTiles',
           collapsable: false,
-          children: [],
+          children: [
+            'gltf',
+            '3dtiles'
+          ],
         },
         {
           title: '矢量数据 DataSource',
