@@ -17,9 +17,11 @@ title: glTF
 
 ![gltf-01](/cesium-docs/assets/img/advance/gltf-01.png)
 
-更多关于glTF文件的组织方式和结构可以查阅文档：[gltf20-reference-guide](https://www.khronos.org/files/gltf20-reference-guide.pdf)、[glTF™ 2.0 Specification](https://www.khronos.org/registry/glTF/specs/2.0/glTF-2.0.html#foreword)。
+更多关于glTF文件的组织方式和结构可以查阅官方文档：
+- [gltf20-reference-guide](https://www.khronos.org/files/gltf20-reference-guide.pdf)：glTF参考手册；
+- [glTF™ 2.0 Specification](https://www.khronos.org/registry/glTF/specs/2.0/glTF-2.0.html#foreword)：glTF文件格式解析。
 
-通过上述简介，可以了解到glTF具有特性十分丰富，不仅描述了3D场景的整个内容，还能包含动画属性。
+通过上述简介，可以了解到glTF具有特性十分丰富，不仅描述了3D场景的整个内容，还能包含动画属性。但glTF的最大优势在于WebGL端的性能，glTF格式是由OpenGL组织推出的，目的是为了形成一种通用的、适用于实时渲染的3D格式。glTF存储着OpenGL渲染图形所需的顶点坐标、法线坐标、贴图纹理坐标和顶点坐标颜色等信息，这些信息正是OpenGL端渲染3D图形直接所需的信息，因此称glTF是面向终点的。由于WebGL是基于OpenGL ES的，因此glTF格式也是为WebGL量身打造的，glTF是最适合WebGL的模型格式。
 
 ## glb 简介
 
