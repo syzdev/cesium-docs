@@ -131,7 +131,8 @@ module.exports = {
           collapsable: false,
           children: [
             'gltf',
-            '3dtiles'
+            '3dtiles',
+            '3dtiles-example'
           ],
         },
         {
