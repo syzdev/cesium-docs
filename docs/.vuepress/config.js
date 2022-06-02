@@ -15,7 +15,7 @@ module.exports = {
       { text: '案例', link: '/example/pick-coordinates' },
       { text: '扩展', link: '/extend/model-data' },
       { text: '关于', link: '/about/' },
-      { text: 'Github', link: 'https://github.com/syzdev/cesium-docs' },
+      { text: 'GitHub', link: 'https://github.com/syzdev/cesium-docs' },
     ],
     sidebar: {
       '/guide/': [

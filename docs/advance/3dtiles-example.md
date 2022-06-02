@@ -91,3 +91,57 @@ tileset.debugShowContentBoundingVolume = true
  frameborder=0 >
  </iframe>
 :::
+
+## 开启 3D Tiles 监视器
+
+在Cesium中，想要通过代码来查看和调试 3D Tiles 是有些麻烦的，因此官方提供了一个 3D Tiles Inspector 工具，开启该工具的代码如下：
+
+```javascript
+viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin)
+```
+
+开启后在页面的右上角将出现如下窗口：
+
+![3dti-01](/cesium-docs/assets/img/advance/3dti-01.png)
+
+各展开菜单的功能如下：
+- `Tileset`：用于鼠标拾取 Tileset 的 Properties；
+- `Display`：用于显示 Tileset 的着色样式（Colorize）、网格图（Wireframe）、边界体（Bounding Volumes）、内容体（Content Volumes）、请求体（Request Volumes）和点云着色（Point Cloud Shading）。
+- `Update`：用于显示定格帧（Freeze Frame）、动态屏幕空间误差（Dynamic Screen Space Error）；
+- `Logging`：用于显示 Tileset 的加载参数，包含几何、材质和批量表的内存占用信息和Draw Commands等重要性能参数；
+- `Tile Debug Labels`：用于直接在场景中显示 Tileset 的调试信息；
+- `Style`：用于设置 Tileset 的样式；
+- `Optimization`：用于调整LOD参数。
+
+::: details 点击查看在线示例：显示 3D Tiles 监视器
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/3dtiles/3DTilesInspector.html" 
+ frameborder=0 >
+ </iframe>
+:::
+
+## 修改 3D Tiles 的透明度或颜色
+
+修改 3D Tiles 的透明度或颜色的代码如下：
+
+```javascript
+tileset.style = new Cesium.Cesium3DTileStyle({
+  color: "color('rgba(178, 34, 34, 0.5)')", // 淡红色，透明度为0.5，半透明
+})
+```
+
+::: details 点击查看在线示例：修改 3D Tiles 的透明度或颜色
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/3dtiles/3DTilesColor.html" 
+ frameborder=0 >
+ </iframe>
+:::
+
