@@ -2,6 +2,17 @@
 title: 场景操作
 ---
 
+::: details 点击查看在线示例：场景操作
+<br/>
+
+ <iframe  
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/interface/sceneOperation.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 ## 显示帧率
 
 帧率默认不显示，显示帧率的效果如下：
