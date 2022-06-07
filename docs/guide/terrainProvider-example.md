@@ -27,6 +27,17 @@ viewer.terrainProvider = terrainProvider
 
 ![ts-04](/cesium-docs/assets/img/guide/ts-04.png)
 
+::: details 点击查看在线示例：ArcGISTiledElevationTerrainProvider
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/terrain/ArcGISTiledElevationTerrainProvider.html"  
+ frameborder=0 >
+ </iframe>
+:::
+
 ## [CesiumTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/CesiumTerrainProvider.html?classFilter=TerrainProvider#CesiumTerrainProvider)
 
 `CesiumTerrainProvider`用于加载自行发布的地形服务或其他地形服务商发布的地形服务。
@@ -62,6 +73,17 @@ viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
 加载后的效果如下：
 
 ![ts-03](/cesium-docs/assets/img/guide/ts-03.png)
+
+::: details 点击查看在线示例：火星科技地形
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/terrain/CesiumTerrainProvider.html"  
+ frameborder=0 >
+ </iframe>
+:::
 
 ### maptiler地形
 
