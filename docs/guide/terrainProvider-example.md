@@ -107,16 +107,37 @@ viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
 加载自定义高程地形的代码如下，通过回调函数`callback`获取高程，这个`TerrainProvider`用的很少：
 
 ```javascript
-const viewer = new Cesium.Viewer("cesiumContainer", {
-  terrainProvider: new Cesium.CustomHeightmapTerrainProvider({
-    width: 32,
-    height: 32,
-    callback: function (x, y, level) {
-      return new Float32Array(32 * 32); // all zeros
-    },
-  })
+const viewer = new Cesium.Viewer("cesiumContainer")
+let width = 64
+let height = 64
+viewer.terrainProvider = new Cesium.CustomHeightmapTerrainProvider({
+  callback: (x, y, level) => {
+    let buffer = new Float32Array(width * height)
+    for (let yy = 0; yy < height; yy++) {
+      for (let xx = 0; xx < width; xx++) {
+        let v = (y + yy / (height - 1)) / Math.pow(2, level)
+        let heightValue = 8000 * (Math.sin(4000 * v) * 0.5 + 0.5)
+        let index = yy * width + xx
+        buffer[index] = heightValue
+      }
+    }
+    return buffer
+  },
+  width: width,
+  height: height,
 })
 ```
+
+::: details 点击查看在线示例：CustomHeightmapTerrainProvider
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/terrain/CustomHeightmapTerrainProvider.html"  
+ frameborder=0 >
+ </iframe>
+:::
 
 ## [EllipsoidTerrainProvider](https://cesium.com/learn/cesiumjs/ref-doc/EllipsoidTerrainProvider.html?classFilter=TerrainProvider#EllipsoidTerrainProvider)
 
