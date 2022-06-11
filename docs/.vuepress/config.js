@@ -71,7 +71,7 @@ module.exports = {
           children: [
             'pick-coordinates',
             'zoom-control',
-            '3dtiles-control',
+            'default-view'
           ],
         },
         {
