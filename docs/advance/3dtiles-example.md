@@ -124,9 +124,9 @@ viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin)
  </iframe>
 :::
 
-## 修改 3D Tiles 的透明度或颜色
+## 修改 3D Tiles 的颜色和透明度
 
-修改 3D Tiles 的透明度或颜色的代码如下：
+修改 3D Tiles 的颜色和透明度的代码如下：
 
 ```javascript
 tileset.style = new Cesium.Cesium3DTileStyle({
@@ -134,7 +134,11 @@ tileset.style = new Cesium.Cesium3DTileStyle({
 })
 ```
 
-::: details 点击查看在线示例：修改 3D Tiles 的透明度或颜色
+效果如下图所示：
+
+![3dti-03](/cesium-docs/assets/img/advance/3dti-03.png)
+
+::: details 点击查看在线示例：修改 3D Tiles 的颜色和透明度
 
 <br/>
  <iframe
@@ -145,3 +149,54 @@ tileset.style = new Cesium.Cesium3DTileStyle({
  </iframe>
 :::
 
+
+
+## 修改单个或分类 3D Tiles 的颜色和透明度
+
+前面提到的“修改 3D Tiles 的透明度或颜色”只能修改整个 3D Tileset，想要修改单个 Tile 那么必须获取其标识，可以是唯一标识`id`，也可以是某个属性标识（如同一分类的属性），通过该标识对单个或分类的 3D Tiles 进行修改，下面是修改单个 Tile 的流程：
+1. 获取 3D Tiles 的属性信息：
+
+```javascript
+// 加载3D Tiles
+let tileset = viewer.scene.primitives.add(
+  new Cesium.Cesium3DTileset({
+    url: './tilesset/tileset.json',
+  })
+)
+
+// 添加点击事件，用于拾取3D Tiles
+const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
+handler.setInputAction(function (movement) {
+  const feature = viewer.scene.pick(movement.position)
+  // 获取点击的Tile的id属性信息，也可以将id换成其他属性
+  console.log(feature.getProperty('id'))
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK)
+```
+
+2. 修改单个或分类 3D Tiles 的颜色或透明度：
+
+```javascript
+// 修改id为0的3D Tiles的颜色和透明度
+tileset.style = new Cesium.Cesium3DTileStyle({
+  color: {
+    conditions: [
+      ["${id} === 0", "color('rgba(178, 34, 34, 0.5)')"],
+    ],
+  },
+})
+```
+
+效果如下图所示：
+
+![3dti-02](/cesium-docs/assets/img/advance/3dti-02.png)
+
+::: details 点击查看在线示例：修改单个或分类 3D Tiles 的颜色和透明度
+
+<br/>
+ <iframe
+ height=600 
+ width=100% 
+ src="https://syzdev.cn/cesium-docs-demo/3dtiles/3DTilesColorSingle.html" 
+ frameborder=0 >
+ </iframe>
+:::
