@@ -173,7 +173,7 @@ handler.setInputAction(function (movement) {
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK)
 ```
 
-2. 修改单个或分类 3D Tiles 的颜色或透明度：
+2. 修改单个或分类 3D Tiles 的颜色或透明度：根据`id`值修改：
 
 ```javascript
 // 修改id为0的3D Tiles的颜色和透明度
@@ -181,6 +181,18 @@ tileset.style = new Cesium.Cesium3DTileStyle({
   color: {
     conditions: [
       ["${id} === 0", "color('rgba(178, 34, 34, 0.5)')"],
+    ],
+  },
+})
+```
+
+3. 修改单个或分类 3D Tiles 的颜色或透明度：根据条件值修改：
+```javascript
+// 修改高度值大于50的3D Tiles的颜色和透明度
+tileset.style = new Cesium.Cesium3DTileStyle({
+  color: {
+    conditions: [
+      ["${Height} > 50", "color('rgba(178, 34, 34, 0.5)')"],
     ],
   },
 })
