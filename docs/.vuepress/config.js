@@ -61,6 +61,7 @@ module.exports = {
             'load-terrain',
             'terrainProvider-example',
             'terrain-system-ci',
+            'terrainElevation'
           ],
         },
       ],
