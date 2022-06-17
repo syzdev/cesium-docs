@@ -81,15 +81,19 @@ module.exports = {
           children: [],
         },
         {
-          title: '官方案例汇总',
-          collapsable: false,
-          children: [],
-        },
-        {
-          title: '前端框架集成',
+          title: '官方案例平台 Cesium Sandcastle',
           collapsable: false,
           children: [
-            'vue-integration'
+            'cesium-sandcastle',
+            'cesium-sandcastle-summary'
+          ],
+        },
+        {
+          title: '第三方框架集成',
+          collapsable: false,
+          children: [
+            'vue-integration',
+            'three-integration'
           ],
         },
       ],
