@@ -48,7 +48,7 @@ title: 官方案例汇总
 | [3D Tiles Point Cloud Styling](https://sandcastle.cesium.com/?src=3D%20Tiles%20Point%20Cloud%20Styling.html&label=All) | 3D Tiles点云样式调试，调整点云的颜色                         |      |
 | [3D Tiles Point Cloud](https://sandcastle.cesium.com/?src=3D%20Tiles%20Point%20Cloud.html&label=All) | 3D Tiles加载点云                                             |      |
 | [3D Tiles Terrain Classification](https://sandcastle.cesium.com/?src=3D%20Tiles%20Terrain%20Classification.html&label=All) | 3D Tiles地形分类，加载3D Tiles附着在地表，将地形属性赋值在3D Tiles上，将对3D Tiles进行的属性拾取对应到地形上 |      |
-## 实体（Entity）和图形（Primitive）
+## 实体 Entity 和图形 Primitive
 | 案例名称 / 链接 | 案例内容 | 图例 |
 | --------------- | -------- | ---- |
 |                 |          |      |
