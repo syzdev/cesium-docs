@@ -19,7 +19,9 @@ title: 官方案例汇总
 | [Cartographic Limit Rectangle](https://sandcastle.cesium.com/?src=Cartographic%20Limit%20Rectangle.html&label=All) | 生成矩形，根据矩形形状切割地球表面                           |      |
 | [Cesium Inspector](https://sandcastle.cesium.com/?src=Cesium%20Inspector.html&label=All) | Cesium监视器，用于查看相机视锥体、调试图形Primitives、调试地形 |      |
 | [Clock](https://sandcastle.cesium.com/?src=Clock.html&label=All) | Cesium中的时间控件                                           |      |
-|                                                              |                                                              |      |
+| [Globe Interior](https://sandcastle.cesium.com/?src=Globe%20Interior.html&label=All) | 开启地表影像半透明，用于查看地球内部                         |      |
+| [Globe Materials](https://sandcastle.cesium.com/?src=Globe%20Materials.html&label=All) | 修改地球表面材质，如地形等高线，地形晕眩图                   |      |
+| [Globe Translucency](https://sandcastle.cesium.com/?src=Globe%20Translucency.html&label=All) | 修改地表透明度                                               |      |
 |                                                              |                                                              |      |
 
 ## 模型相关 glTF
@@ -66,6 +68,12 @@ title: 官方案例汇总
 | [Clamp to 3D Model](https://sandcastle.cesium.com/?src=Clamp%20to%203D%20Model.html&label=All) | 让实体Entity附着在模型之上移动                               |      |
 | [Clamp to Terrain](https://sandcastle.cesium.com/?src=Clamp%20to%20Terrain.html&label=All) | 让实体Entity附着在地形之上：`heightReference`和`clampToGround` |      |
 | [Corridor](https://sandcastle.cesium.com/?src=Corridor.html&label=All) | 走廊（一种由点连接而成的实体）                               |      |
+| [Cylinders and Cones](https://sandcastle.cesium.com/?src=Cylinders%20and%20Cones.html&label=All) | 圆柱和圆锥                                                   |      |
+| [Distance Display Conditions](https://sandcastle.cesium.com/?src=Distance%20Display%20Conditions.html&label=All) | 通过`distanceDisplayCondition`属性根据视角距离控制实体的显示和隐藏 |      |
+| [Geometry Height Reference](https://sandcastle.cesium.com/?src=Geometry%20Height%20Reference.html&label=All) | 带有高程参考值的几何实体，如附着在地表                       |      |
+|                                                              |                                                              |      |
+|                                                              |                                                              |      |
+|                                                              |                                                              |      |
 |                                                              |                                                              |      |
 
 
@@ -80,8 +88,8 @@ title: 官方案例汇总
 | ------------------------------------------------------------ | -------------------------- | ---- |
 | [ArcGIS MapServer](https://sandcastle.cesium.com/?src=ArcGIS%20MapServer.html&label=All) | ArcGIS影像服务             |      |
 | [Blue Marble](https://sandcastle.cesium.com/?src=Blue%20Marble.html&label=All) | Blue Marble影像：NASA 2004 |      |
-|                                                              |                            |      |
-|                                                              |                            |      |
+| [Earth at Night](https://sandcastle.cesium.com/?src=Earth%20at%20Night.html&label=All) | Black Marble影像：2017     |      |
+| [Elevation Band Material](https://sandcastle.cesium.com/?src=Elevation%20Band%20Material.html&label=All) | 地形等高线                 |      |
 |                                                              |                            |      |
 |                                                              |                            |      |
 |                                                              |                            |      |
@@ -92,7 +100,7 @@ title: 官方案例汇总
 | [ArcGIS Tiled Elevation Terrain](https://sandcastle.cesium.com/?src=ArcGIS%20Tiled%20Elevation%20Terrain.html&label=All) | ArcGIS地形服务               |      |
 | [ArcticDEM](https://sandcastle.cesium.com/?src=ArcticDEM.html&label=All) | ArcticDEM数字高程模型        |      |
 | [Cesium World Terrain](https://sandcastle.cesium.com/?src=Cesium%20World%20Terrain.html&label=All) | 加载Cesium官方提供的地形服务 |      |
-|                                                              |                              |      |
+| [Drawing on Terrain](https://sandcastle.cesium.com/?src=Drawing%20on%20Terrain.html&label=All) | 在地形上绘制折线或多边形     |      |
 |                                                              |                              |      |
 |                                                              |                              |      |
 |                                                              |                              |      |
@@ -130,11 +138,16 @@ title: 官方案例汇总
 | [CZML](https://sandcastle.cesium.com/?src=CZML.html&label=All) | 通过`CzmlDataSource`的形式加载外部已经定义好的`.czml`文件    |      |
 
 ## DataSource
-| 案例名称 / 链接                                              | 案例内容                              | 图例 |
-| ------------------------------------------------------------ | ------------------------------------- | ---- |
-| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All) | 通过`KmlDataSource`的形式实现聚合操作 |      |
-| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All) | 自定义数据源`WebGLGlobeDataSource`    |      |
-|                                                              |                                       |      |
+| 案例名称 / 链接                                              | 案例内容                                  | 图例 |
+| ------------------------------------------------------------ | ----------------------------------------- | ---- |
+| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All) | 通过`KmlDataSource`的形式实现聚合操作     |      |
+| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All) | 自定义数据源`WebGLGlobeDataSource`        |      |
+| [DataSource Ordering](https://sandcastle.cesium.com/?src=DataSource%20Ordering.html&label=All) | 定义`DataSource`的层叠顺序                |      |
+| [Export KML](https://sandcastle.cesium.com/?src=Export%20KML.html&label=All) | 导出KML数据                               |      |
+| [GPX](https://sandcastle.cesium.com/?src=GPX.html&label=All) | 通过`GpxDataSource`加载点、路径或轨迹数据 |      |
+| [GeoJSON and TopoJSON](https://sandcastle.cesium.com/?src=GeoJSON%20and%20TopoJSON.html&label=All) | 加载GeoJSON并修改其样式                   |      |
+| [GeoJSON simplestyle](https://sandcastle.cesium.com/?src=GeoJSON%20simplestyle.html&label=All) | 加载简单样式的GeoJSON                     |      |
+|                                                              |                                           |      |
 
 ## 特效
 | 案例名称 / 链接                                              | 案例内容                                         | 图例 |
@@ -149,7 +162,7 @@ title: 官方案例汇总
 | [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All) | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果 |      |
 | [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All) | 自定义`Shader`修改模型的材质信息                 |      |
 | [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                       |      |
-|                                                              |                                                  |      |
-|                                                              |                                                  |      |
-|                                                              |                                                  |      |
+| [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All) | 背景虚化、场景虚化                               |      |
+| [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All) | 抗锯齿                                           |      |
+| [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰             |      |
 |                                                              |                                                  |      |
