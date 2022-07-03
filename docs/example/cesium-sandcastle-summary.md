@@ -9,6 +9,11 @@ title: 官方案例汇总
 | [Cardboard](https://sandcastle.cesium.com/?src=Cardboard.html&label=All) | 切换到VR视角                     |      |
 | [Cesium Widget](https://sandcastle.cesium.com/?src=Cesium%20Widget.html&label=All) | Cesium简化场景（不包含任何控件） |      |
 | [Custom Geocoder](https://sandcastle.cesium.com/?src=Custom%20Geocoder.html&label=All) | 自定义查找位置控件               |      |
+| [Hello World](https://sandcastle.cesium.com/?label=All)      | Hello World初始界面              |      |
+|                                                              |                                  |      |
+|                                                              |                                  |      |
+|                                                              |                                  |      |
+|                                                              |                                  |      |
 
 ## 场景操作
 
@@ -22,14 +27,25 @@ title: 官方案例汇总
 | [Globe Interior](https://sandcastle.cesium.com/?src=Globe%20Interior.html&label=All) | 开启地表影像半透明，用于查看地球内部                         |      |
 | [Globe Materials](https://sandcastle.cesium.com/?src=Globe%20Materials.html&label=All) | 修改地球表面材质，如地形等高线，地形晕眩图                   |      |
 | [Globe Translucency](https://sandcastle.cesium.com/?src=Globe%20Translucency.html&label=All) | 修改地表透明度                                               |      |
+| [HTML Overlays](https://sandcastle.cesium.com/?src=HTML%20Overlays.html&label=All) | 附着在地球上的HTML元素                                       |      |
+|                                                              |                                                              |      |
+|                                                              |                                                              |      |
+|                                                              |                                                              |      |
+|                                                              |                                                              |      |
 |                                                              |                                                              |      |
 
 ## 模型相关 glTF
-| 案例名称 / 链接                                              | 案例内容                                                 | 图例 |
-| ------------------------------------------------------------ | -------------------------------------------------------- | ---- |
-| [3D Models](https://sandcastle.cesium.com/?src=3D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型                        |      |
-| [3D Models Coloring](https://sandcastle.cesium.com/?src=3D%20Models%20Coloring.html&label=All) | 修改 `.glb` 格式的模型的显示模式、颜色、透明度和轮廓样式 |      |
-|                                                              |                                                          |      |
+| 案例名称 / 链接                                              | 案例内容                                                   | 图例 |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ---- |
+| [3D Models](https://sandcastle.cesium.com/?src=3D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型                          |      |
+| [3D Models Coloring](https://sandcastle.cesium.com/?src=3D%20Models%20Coloring.html&label=All) | 修改 `.glb` 格式的模型的显示模式、颜色、透明度和轮廓样式   |      |
+| [HeadingPitchRoll](https://sandcastle.cesium.com/?src=HeadingPitchRoll.html&label=All) | 键盘控制`.glb`模型的航向角Heading、俯仰角Pitch、滚转角Roll |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
 ## 模型相关 3D Tiles
 | 案例名称 / 链接                                              | 案例内容                                                     | 图例 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
@@ -71,7 +87,7 @@ title: 官方案例汇总
 | [Cylinders and Cones](https://sandcastle.cesium.com/?src=Cylinders%20and%20Cones.html&label=All) | 圆柱和圆锥                                                   |      |
 | [Distance Display Conditions](https://sandcastle.cesium.com/?src=Distance%20Display%20Conditions.html&label=All) | 通过`distanceDisplayCondition`属性根据视角距离控制实体的显示和隐藏 |      |
 | [Geometry Height Reference](https://sandcastle.cesium.com/?src=Geometry%20Height%20Reference.html&label=All) | 带有高程参考值的几何实体，如附着在地表                       |      |
-|                                                              |                                                              |      |
+| [Interpolation](https://sandcastle.cesium.com/?src=Interpolation.html&label=All) | 通过插值生成多边形、圆形并让飞机围绕飞行                     |      |
 |                                                              |                                                              |      |
 |                                                              |                                                              |      |
 |                                                              |                                                              |      |
@@ -84,26 +100,32 @@ title: 官方案例汇总
 
 
 ## 影像
-| 案例名称 / 链接                                              | 案例内容                   | 图例 |
-| ------------------------------------------------------------ | -------------------------- | ---- |
-| [ArcGIS MapServer](https://sandcastle.cesium.com/?src=ArcGIS%20MapServer.html&label=All) | ArcGIS影像服务             |      |
-| [Blue Marble](https://sandcastle.cesium.com/?src=Blue%20Marble.html&label=All) | Blue Marble影像：NASA 2004 |      |
-| [Earth at Night](https://sandcastle.cesium.com/?src=Earth%20at%20Night.html&label=All) | Black Marble影像：2017     |      |
-| [Elevation Band Material](https://sandcastle.cesium.com/?src=Elevation%20Band%20Material.html&label=All) | 地形等高线                 |      |
-|                                                              |                            |      |
-|                                                              |                            |      |
-|                                                              |                            |      |
+| 案例名称 / 链接                                              | 案例内容                                                     | 图例 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| [ArcGIS MapServer](https://sandcastle.cesium.com/?src=ArcGIS%20MapServer.html&label=All) | ArcGIS影像服务                                               |      |
+| [Blue Marble](https://sandcastle.cesium.com/?src=Blue%20Marble.html&label=All) | Blue Marble影像：NASA 2004                                   |      |
+| [Earth at Night](https://sandcastle.cesium.com/?src=Earth%20at%20Night.html&label=All) | Black Marble影像：2017                                       |      |
+| [Elevation Band Material](https://sandcastle.cesium.com/?src=Elevation%20Band%20Material.html&label=All) | 地形等高线                                                   |      |
+| [Google Earth Enterprise](https://sandcastle.cesium.com/?src=Google%20Earth%20Enterprise.html&label=All) | 由`GoogleEarthEnterpriseImageryProvider`提供的谷歌影像服务   |      |
+| [Imagery Adjustment](https://sandcastle.cesium.com/?src=Imagery%20Adjustment.html&label=All) | 影像参数调整：亮度、对比度、灰度值、伽马值....               |      |
+| [Imagery Color To Alpha](https://sandcastle.cesium.com/?src=Imagery%20Color%20To%20Alpha.html&label=All) | 定义两个影像图层，调整其中一个影像图层的透明度而显示另一个影像图层 |      |
+| [Imagery Cutout](https://sandcastle.cesium.com/?src=Imagery%20Cutout.html&label=All) | 影像裁剪：由键盘控制影像裁剪的区域                           |      |
+| [Imagery Layers Manipulation](https://sandcastle.cesium.com/?src=Imagery%20Layers%20Manipulation.html&label=All) | 影像图层层叠顺序操作板，用于调试多个影像图层的层叠顺序       |      |
+| [Imagery Layers Split](https://sandcastle.cesium.com/?src=Imagery%20Layers%20Split.html&label=All) | 影像图层卷帘效果                                             |      |
+| [Imagery Layers Texture Filters](https://sandcastle.cesium.com/?src=Imagery%20Layers%20Texture%20Filters.html&label=All) | 影像图层纹理过滤效果，类似于卷帘操作                         |      |
+| [Imagery Layers](https://sandcastle.cesium.com/?src=Imagery%20Layers.html&label=All) | 加载`createWorldImagery`影像图层                             |      |
+|                                                              |                                                              |      |
 
 ##  地形
-| 案例名称 / 链接                                              | 案例内容                     | 图例 |
-| ------------------------------------------------------------ | ---------------------------- | ---- |
-| [ArcGIS Tiled Elevation Terrain](https://sandcastle.cesium.com/?src=ArcGIS%20Tiled%20Elevation%20Terrain.html&label=All) | ArcGIS地形服务               |      |
-| [ArcticDEM](https://sandcastle.cesium.com/?src=ArcticDEM.html&label=All) | ArcticDEM数字高程模型        |      |
-| [Cesium World Terrain](https://sandcastle.cesium.com/?src=Cesium%20World%20Terrain.html&label=All) | 加载Cesium官方提供的地形服务 |      |
-| [Drawing on Terrain](https://sandcastle.cesium.com/?src=Drawing%20on%20Terrain.html&label=All) | 在地形上绘制折线或多边形     |      |
-|                                                              |                              |      |
-|                                                              |                              |      |
-|                                                              |                              |      |
+| 案例名称 / 链接                                              | 案例内容                                                   | 图例 |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ---- |
+| [ArcGIS Tiled Elevation Terrain](https://sandcastle.cesium.com/?src=ArcGIS%20Tiled%20Elevation%20Terrain.html&label=All) | ArcGIS地形服务                                             |      |
+| [ArcticDEM](https://sandcastle.cesium.com/?src=ArcticDEM.html&label=All) | ArcticDEM数字高程模型                                      |      |
+| [Cesium World Terrain](https://sandcastle.cesium.com/?src=Cesium%20World%20Terrain.html&label=All) | 加载Cesium官方提供的地形服务                               |      |
+| [Drawing on Terrain](https://sandcastle.cesium.com/?src=Drawing%20on%20Terrain.html&label=All) | 在地形上绘制折线或多边形                                   |      |
+| [Google Earth Enterprise](https://sandcastle.cesium.com/?src=Google%20Earth%20Enterprise.html&label=All) | 由`GoogleEarthEnterpriseTerrainProvider`提供的谷歌地形服务 |      |
+|                                                              |                                                            |      |
+|                                                              |                                                            |      |
 
 
 ## CZML
@@ -138,31 +160,40 @@ title: 官方案例汇总
 | [CZML](https://sandcastle.cesium.com/?src=CZML.html&label=All) | 通过`CzmlDataSource`的形式加载外部已经定义好的`.czml`文件    |      |
 
 ## DataSource
-| 案例名称 / 链接                                              | 案例内容                                  | 图例 |
-| ------------------------------------------------------------ | ----------------------------------------- | ---- |
-| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All) | 通过`KmlDataSource`的形式实现聚合操作     |      |
-| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All) | 自定义数据源`WebGLGlobeDataSource`        |      |
-| [DataSource Ordering](https://sandcastle.cesium.com/?src=DataSource%20Ordering.html&label=All) | 定义`DataSource`的层叠顺序                |      |
-| [Export KML](https://sandcastle.cesium.com/?src=Export%20KML.html&label=All) | 导出KML数据                               |      |
-| [GPX](https://sandcastle.cesium.com/?src=GPX.html&label=All) | 通过`GpxDataSource`加载点、路径或轨迹数据 |      |
-| [GeoJSON and TopoJSON](https://sandcastle.cesium.com/?src=GeoJSON%20and%20TopoJSON.html&label=All) | 加载GeoJSON并修改其样式                   |      |
-| [GeoJSON simplestyle](https://sandcastle.cesium.com/?src=GeoJSON%20simplestyle.html&label=All) | 加载简单样式的GeoJSON                     |      |
-|                                                              |                                           |      |
+| 案例名称 / 链接                                              | 案例内容                                     | 图例 |
+| ------------------------------------------------------------ | -------------------------------------------- | ---- |
+| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All) | 通过`KmlDataSource`的形式实现聚合操作        |      |
+| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All) | 自定义数据源`WebGLGlobeDataSource`           |      |
+| [DataSource Ordering](https://sandcastle.cesium.com/?src=DataSource%20Ordering.html&label=All) | 定义`DataSource`的层叠顺序                   |      |
+| [Export KML](https://sandcastle.cesium.com/?src=Export%20KML.html&label=All) | 导出KML数据                                  |      |
+| [GPX](https://sandcastle.cesium.com/?src=GPX.html&label=All) | 通过`GpxDataSource`加载点、路径或轨迹数据    |      |
+| [GeoJSON and TopoJSON](https://sandcastle.cesium.com/?src=GeoJSON%20and%20TopoJSON.html&label=All) | 加载GeoJSON并修改其样式                      |      |
+| [GeoJSON simplestyle](https://sandcastle.cesium.com/?src=GeoJSON%20simplestyle.html&label=All) | 加载简单样式的GeoJSON                        |      |
+| [KML Tours](https://sandcastle.cesium.com/?src=KML%20Tours.html&label=All) | 根据KML定义的坐标数据执行`flyto`             |      |
+| [KML](https://sandcastle.cesium.com/?src=KML.html&label=All) | 加载KML数据：全球基础设施、全球GDP、行车路径 |      |
+|                                                              |                                              |      |
+|                                                              |                                              |      |
+|                                                              |                                              |      |
 
 ## 特效
-| 案例名称 / 链接                                              | 案例内容                                         | 图例 |
-| ------------------------------------------------------------ | ------------------------------------------------ | ---- |
-| [Ambient Occlusion](https://sandcastle.cesium.com/?src=Ambient%20Occlusion.html&label=All) | 坏境光遮蔽                                       |      |
-| [Atmosphere](https://sandcastle.cesium.com/?src=Atmosphere.html&label=All) | 大气特效：地表、天空                             |      |
-| [Bloom](https://sandcastle.cesium.com/?src=Bloom.html&label=All) | 场景渲染特效：对比度、亮度、伽马                 |      |
-| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All) | 云层特效及其参数调试                             |      |
-| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All) | 加载一片云层                                     |      |
-| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All) | 自定义`Shader`实现模型点击高亮效果               |      |
-| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All) | 自定义`Shader`实现场景马赛克效果                 |      |
-| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All) | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果 |      |
-| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All) | 自定义`Shader`修改模型的材质信息                 |      |
-| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                       |      |
-| [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All) | 背景虚化、场景虚化                               |      |
-| [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All) | 抗锯齿                                           |      |
-| [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰             |      |
-|                                                              |                                                  |      |
+| 案例名称 / 链接                                              | 案例内容                                              | 图例 |
+| ------------------------------------------------------------ | ----------------------------------------------------- | ---- |
+| [Ambient Occlusion](https://sandcastle.cesium.com/?src=Ambient%20Occlusion.html&label=All) | 坏境光遮蔽                                            |      |
+| [Atmosphere](https://sandcastle.cesium.com/?src=Atmosphere.html&label=All) | 大气特效：地表、天空                                  |      |
+| [Bloom](https://sandcastle.cesium.com/?src=Bloom.html&label=All) | 场景渲染特效：对比度、亮度、伽马                      |      |
+| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All) | 云层特效及其参数调试                                  |      |
+| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All) | 加载一片云层                                          |      |
+| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All) | 自定义`Shader`实现模型点击高亮效果                    |      |
+| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All) | 自定义`Shader`实现场景马赛克效果                      |      |
+| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All) | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果      |      |
+| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All) | 自定义`Shader`修改模型的材质信息                      |      |
+| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                            |      |
+| [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All) | 背景虚化、场景虚化                                    |      |
+| [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All) | 抗锯齿                                                |      |
+| [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰                  |      |
+| [HighDynamicRange](https://sandcastle.cesium.com/?src=High%20Dynamic%20Range.html&label=All) | High Dynamic Range，HDR效果，用于渲染更加真实的3D效果 |      |
+| [Image-Based Lighting](https://sandcastle.cesium.com/?src=Image-Based%20Lighting.html&label=All) | envmap，环境光反射效果                                |      |
+|                                                              |                                                       |      |
+|                                                              |                                                       |      |
+|                                                              |                                                       |      |
+|                                                              |                                                       |      |
