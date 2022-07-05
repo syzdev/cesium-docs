@@ -28,7 +28,7 @@ title: 官方案例汇总
 | [Globe Materials](https://sandcastle.cesium.com/?src=Globe%20Materials.html&label=All) | 修改地球表面材质，如地形等高线，地形晕眩图                   |      |
 | [Globe Translucency](https://sandcastle.cesium.com/?src=Globe%20Translucency.html&label=All) | 修改地表透明度                                               |      |
 | [HTML Overlays](https://sandcastle.cesium.com/?src=HTML%20Overlays.html&label=All) | 附着在地球上的HTML元素                                       |      |
-|                                                              |                                                              |      |
+| [LocalToFixedFrame](https://sandcastle.cesium.com/?src=LocalToFixedFrame.html&label=All) | 不同坐标系下的变换                                           |      |
 |                                                              |                                                              |      |
 |                                                              |                                                              |      |
 |                                                              |                                                              |      |
@@ -40,7 +40,7 @@ title: 官方案例汇总
 | [3D Models](https://sandcastle.cesium.com/?src=3D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型                          |      |
 | [3D Models Coloring](https://sandcastle.cesium.com/?src=3D%20Models%20Coloring.html&label=All) | 修改 `.glb` 格式的模型的显示模式、颜色、透明度和轮廓样式   |      |
 | [HeadingPitchRoll](https://sandcastle.cesium.com/?src=HeadingPitchRoll.html&label=All) | 键盘控制`.glb`模型的航向角Heading、俯仰角Pitch、滚转角Roll |      |
-|                                                              |                                                            |      |
+| [Manually Controlled Animation](https://sandcastle.cesium.com/?src=Manually%20Controlled%20Animation.html&label=All) | 人工控制模型的动画                                         |      |
 |                                                              |                                                            |      |
 |                                                              |                                                            |      |
 |                                                              |                                                            |      |
@@ -88,7 +88,7 @@ title: 官方案例汇总
 | [Distance Display Conditions](https://sandcastle.cesium.com/?src=Distance%20Display%20Conditions.html&label=All) | 通过`distanceDisplayCondition`属性根据视角距离控制实体的显示和隐藏 |      |
 | [Geometry Height Reference](https://sandcastle.cesium.com/?src=Geometry%20Height%20Reference.html&label=All) | 带有高程参考值的几何实体，如附着在地表                       |      |
 | [Interpolation](https://sandcastle.cesium.com/?src=Interpolation.html&label=All) | 通过插值生成多边形、圆形并让飞机围绕飞行                     |      |
-|                                                              |                                                              |      |
+| [Labels](https://sandcastle.cesium.com/?src=Labels.html&label=All) | 文本标签                                                     |      |
 |                                                              |                                                              |      |
 |                                                              |                                                              |      |
 
@@ -193,7 +193,7 @@ title: 官方案例汇总
 | [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰                  |      |
 | [HighDynamicRange](https://sandcastle.cesium.com/?src=High%20Dynamic%20Range.html&label=All) | High Dynamic Range，HDR效果，用于渲染更加真实的3D效果 |      |
 | [Image-Based Lighting](https://sandcastle.cesium.com/?src=Image-Based%20Lighting.html&label=All) | envmap，环境光反射效果                                |      |
-|                                                              |                                                       |      |
-|                                                              |                                                       |      |
-|                                                              |                                                       |      |
+| [LensFlare](https://sandcastle.cesium.com/?src=LensFlare.html&label=All) | 镜头炫光                                              |      |
+| [Lighting](https://sandcastle.cesium.com/?src=Lighting.html&label=All) | 灯光效果：局部光、散光、日光、月光...                 |      |
+| [MSAA](https://sandcastle.cesium.com/?src=MSAA.html&label=All) | 多重采样抗锯齿                                        |      |
 |                                                              |                                                       |      |
