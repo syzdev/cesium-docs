@@ -36,14 +36,14 @@ title: 官方案例汇总
 | [Video](https://sandcastle.cesium.com/?src=Video.html&label=All) | 在地球表面播放视频                                           |      |
 
 ## 模型相关 glTF
-| 案例名称 / 链接                                              | 案例内容                                                   | 图例 |
-| ------------------------------------------------------------ | ---------------------------------------------------------- | ---- |
-| [3D Models](https://sandcastle.cesium.com/?src=3D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型                          |      |
-| [3D Models Coloring](https://sandcastle.cesium.com/?src=3D%20Models%20Coloring.html&label=All) | 修改 `.glb` 格式的模型的显示模式、颜色、透明度和轮廓样式   |      |
-| [HeadingPitchRoll](https://sandcastle.cesium.com/?src=HeadingPitchRoll.html&label=All) | 键盘控制`.glb`模型的航向角Heading、俯仰角Pitch、滚转角Roll |      |
-| [Manually Controlled Animation](https://sandcastle.cesium.com/?src=Manually%20Controlled%20Animation.html&label=All) | 人工控制模型的动画                                         |      |
-| [Model Experimental 3D Models](https://sandcastle.cesium.com/?src=Model%20Experimental%203D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型（实验）                  |      |
-| [Time Dynamic Wheels](https://sandcastle.cesium.com/?src=Time%20Dynamic%20Wheels.html&label=All) | 汽车模型的行驶速度随时间变化，其轮胎转动的速度也随之变化   |      |
+| 案例名称 / 链接                                              | 案例内容                                                   | 图例                                                         |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| [3D Models](https://sandcastle.cesium.com/?src=3D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型                          | ![3D Models.jpg](/cesium-docs/assets/img/example/sandcastle/3DModels.jpg) |
+| [3D Models Coloring](https://sandcastle.cesium.com/?src=3D%20Models%20Coloring.html&label=All) | 修改 `.glb` 格式的模型的显示模式、颜色、透明度和轮廓样式   |                                                              |
+| [HeadingPitchRoll](https://sandcastle.cesium.com/?src=HeadingPitchRoll.html&label=All) | 键盘控制`.glb`模型的航向角Heading、俯仰角Pitch、滚转角Roll |                                                              |
+| [Manually Controlled Animation](https://sandcastle.cesium.com/?src=Manually%20Controlled%20Animation.html&label=All) | 人工控制模型的动画                                         |                                                              |
+| [Model Experimental 3D Models](https://sandcastle.cesium.com/?src=Model%20Experimental%203D%20Models.html&label=All) | 加载 `.glb` / `.gltf`  格式的模型（实验）                  |                                                              |
+| [Time Dynamic Wheels](https://sandcastle.cesium.com/?src=Time%20Dynamic%20Wheels.html&label=All) | 汽车模型的行驶速度随时间变化，其轮胎转动的速度也随之变化   |                                                              |
 ## 模型相关 3D Tiles
 | 案例名称 / 链接                                              | 案例内容                                                     | 图例 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
