@@ -151,36 +151,36 @@ title: 官方案例汇总
 
 
 ## CZML
-| 案例名称 / 链接                                              | 案例内容                                                     | 图例 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| [CZML 3D TIles](https://sandcastle.cesium.com/?src=CZML%203D%20Tiles.html&label=All) | 通过`CzmlDataSource`的形式加载3D Tiles                       |      |
-| [CZML Billboard and Label](https://sandcastle.cesium.com/?src=CZML%20Billboard%20and%20Label.html&label=All) | 通过`CzmlDataSource`的形式加载广告牌和标签                   |      |
-| [CZML Box](https://sandcastle.cesium.com/?src=CZML%20Box.html&label=All) | 通过`CzmlDataSource`的形式加载盒子                           |      |
-| [CZML Circles and Ellipses](https://sandcastle.cesium.com/?src=CZML%20Circles%20and%20Ellipses.html&label=All) | 通过`CzmlDataSource`的形式加载圆形和椭圆                     |      |
-| [CZML Colors](https://sandcastle.cesium.com/?src=CZML%20Colors.html&label=All) | 通过`CzmlDataSource`的形式加载矩形                           |      |
-| [CZML Cones and Cylinders](https://sandcastle.cesium.com/?src=CZML%20Cones%20and%20Cylinders.html&label=All) | 通过`CzmlDataSource`的形式加载圆锥和圆柱                     |      |
-| [CZML Corridor](https://sandcastle.cesium.com/?src=CZML%20Corridor.html&label=All) | 通过`CzmlDataSource`的形式加载走廊（一种由点连接而成的实体） |      |
-| [CZML Custom Properties](https://sandcastle.cesium.com/?src=CZML%20Custom%20Properties.html&label=All) | 通过`CzmlDataSource`的形式加载随时间改变的动态实体           |      |
-| [CZML Model - Node Transformations](https://sandcastle.cesium.com/?src=CZML%20Model%20-%20Node%20Transformations.html&label=All) | 通过`CzmlDataSource`的形式加载glTF并实现人物动画效果         |      |
-| [CZML Model Articulations](https://sandcastle.cesium.com/?src=CZML%20Model%20Articulations.html&label=All) | 通过`CzmlDataSource`的形式加载glTF火箭模型并实现火箭外壳分离动画 |      |
-| [CZML Model Data URL](https://sandcastle.cesium.com/?src=CZML%20Model%20Data%20URL.html&label=All) | 通过`CzmlDataSource`的形式从网络URL上请求加载模型（Base64格式） |      |
-| [CZML Model](https://sandcastle.cesium.com/?src=CZML%20Model.html&label=All) | 通过`CzmlDataSource`的形式加载glTF飞机模型                   |      |
-| [CZML Path](https://sandcastle.cesium.com/?src=CZML%20Path.html&label=All) | 通过`CzmlDataSource`的形式加载动态路径                       |      |
-| [CZML Point - Time Dynamic](https://sandcastle.cesium.com/?src=CZML%20Point%20-%20Time%20Dynamic.html&label=All) | 通过`CzmlDataSource`的形式加载随事件变化位置的点             |      |
-| [CZML Point](https://sandcastle.cesium.com/?src=CZML%20Point.html&label=All) | 通过`CzmlDataSource`的形式加载点                             |      |
-| [CZML Polygon - Interpolating References](https://sandcastle.cesium.com/?src=CZML%20Polygon%20-%20Interpolating%20References.html&label=All) | 通过`CzmlDataSource`的形式加载随时间变化颜色的多边形         |      |
-| [CZML Polygon - Intervals, Availability](https://sandcastle.cesium.com/?src=CZML%20Polygon%20-%20Intervals%2C%20Availability.html&label=All) | 通过`CzmlDataSource`的形式加载随时间变化显示和隐藏的多边形   |      |
-| [CZML Polygon](https://sandcastle.cesium.com/?src=CZML%20Polygon.html&label=All) | 通过`CzmlDataSource`的形式加载多边形                         |      |
-| [CZML Polyline Volume](https://sandcastle.cesium.com/?src=CZML%20Polyline%20Volume.html&label=All) | 通过`CzmlDataSource`的形式加载折线体                         |      |
-| [CZML Polyline](https://sandcastle.cesium.com/?src=CZML%20Polyline.html&label=All) | 通过`CzmlDataSource`的形式加载折线                           |      |
-| [CZML Position Definitions](https://sandcastle.cesium.com/?src=CZML%20Position%20Definitions.html&label=All) | 通过`CzmlDataSource`的形式加载实体所使用的坐标定义方式：经纬高、笛卡尔空间直角坐标系、弧度 |      |
-| [CZML Rectangle](https://sandcastle.cesium.com/?src=CZML%20Rectangle.html&label=All) | 通过`CzmlDataSource`的形式加载矩形                           |      |
-| [CZML Reference Properties](https://sandcastle.cesium.com/?src=CZML%20Reference%20Properties.html&label=All) | 通过`CzmlDataSource`的形式加载实体并定义鼠标拾取时的弹窗`description` |      |
-| [CZML Spheres and Ellipsoids](https://sandcastle.cesium.com/?src=CZML%20Spheres%20and%20Ellipsoids.html&label=All) | 通过`CzmlDataSource`的形式加载球体和椭球体                   |      |
-| [CZML Wall](https://sandcastle.cesium.com/?src=CZML%20Wall.html&label=All) | 通过`CzmlDataSource`的形式加载墙体                           |      |
-| [CZML zIndex](https://sandcastle.cesium.com/?src=CZML%20ZIndex.html&label=All) | 通过`CzmlDataSource`的形式加载多个实体时定义不同实体的堆叠顺序`zIndex` |      |
-| [CZML](https://sandcastle.cesium.com/?src=CZML.html&label=All) | 通过`CzmlDataSource`的形式加载外部已经定义好的`.czml`文件    |      |
-| [Multi-part CZML](https://sandcastle.cesium.com/?src=Multi-part%20CZML.html&label=All) | 加载多个`.czml`文件，将其拼接成一个完整的路径                |      |
+| 案例名称 / 链接                                              | 案例内容                                                     | 图例                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [CZML 3D TIles](https://sandcastle.cesium.com/?src=CZML%203D%20Tiles.html&label=All) | 通过`CzmlDataSource`的形式加载3D Tiles                       | ![CZML3DTiles.jpg](/cesium-docs/assets/img/example/sandcastle/CZML3DTiles.jpg) |
+| [CZML Billboard and Label](https://sandcastle.cesium.com/?src=CZML%20Billboard%20and%20Label.html&label=All) | 通过`CzmlDataSource`的形式加载广告牌和标签                   | ![CZMLBillboardandLabel.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLBillboardandLabel.jpg) |
+| [CZML Box](https://sandcastle.cesium.com/?src=CZML%20Box.html&label=All) | 通过`CzmlDataSource`的形式加载盒子                           | ![CZMLBox.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLBox.jpg) |
+| [CZML Circles and Ellipses](https://sandcastle.cesium.com/?src=CZML%20Circles%20and%20Ellipses.html&label=All) | 通过`CzmlDataSource`的形式加载圆形和椭圆                     | ![CZMLCirclesandEllipses.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLCirclesandEllipses.jpg) |
+| [CZML Colors](https://sandcastle.cesium.com/?src=CZML%20Colors.html&label=All) | 通过`CzmlDataSource`的形式加载矩形                           | ![CZMLColors.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLColors.jpg) |
+| [CZML Cones and Cylinders](https://sandcastle.cesium.com/?src=CZML%20Cones%20and%20Cylinders.html&label=All) | 通过`CzmlDataSource`的形式加载圆锥和圆柱                     | ![CZMLConesandCylinders.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLConesandCylinders.jpg) |
+| [CZML Corridor](https://sandcastle.cesium.com/?src=CZML%20Corridor.html&label=All) | 通过`CzmlDataSource`的形式加载走廊（一种由点连接而成的实体） | ![CZMLCorridor.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLCorridor.jpg) |
+| [CZML Custom Properties](https://sandcastle.cesium.com/?src=CZML%20Custom%20Properties.html&label=All) | 通过`CzmlDataSource`的形式加载随时间改变的动态实体           | ![CZMLCustomProperties.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLCustomProperties.jpg) |
+| [CZML Model - Node Transformations](https://sandcastle.cesium.com/?src=CZML%20Model%20-%20Node%20Transformations.html&label=All) | 通过`CzmlDataSource`的形式加载glTF并实现人物动画效果         | ![CZMLModel-NodeTransformations.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLModel-NodeTransformations.jpg) |
+| [CZML Model Articulations](https://sandcastle.cesium.com/?src=CZML%20Model%20Articulations.html&label=All) | 通过`CzmlDataSource`的形式加载glTF火箭模型并实现火箭外壳分离动画 | ![CZMLModelArticulations.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLModelArticulations.jpg) |
+| [CZML Model Data URL](https://sandcastle.cesium.com/?src=CZML%20Model%20Data%20URL.html&label=All) | 通过`CzmlDataSource`的形式从网络URL上请求加载模型（Base64格式） | ![CZMLModelDataURL.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLModelDataURL.jpg) |
+| [CZML Model](https://sandcastle.cesium.com/?src=CZML%20Model.html&label=All) | 通过`CzmlDataSource`的形式加载glTF飞机模型                   | ![CZMLModel.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLModel.jpg) |
+| [CZML Path](https://sandcastle.cesium.com/?src=CZML%20Path.html&label=All) | 通过`CzmlDataSource`的形式加载动态路径                       | ![CZMLPath.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPath.jpg) |
+| [CZML Point - Time Dynamic](https://sandcastle.cesium.com/?src=CZML%20Point%20-%20Time%20Dynamic.html&label=All) | 通过`CzmlDataSource`的形式加载随事件变化位置的点             | ![CZMLPoint-TimeDynamic.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPoint-TimeDynamic.jpg) |
+| [CZML Point](https://sandcastle.cesium.com/?src=CZML%20Point.html&label=All) | 通过`CzmlDataSource`的形式加载点                             | ![CZMLPoint.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPoint.jpg) |
+| [CZML Polygon - Interpolating References](https://sandcastle.cesium.com/?src=CZML%20Polygon%20-%20Interpolating%20References.html&label=All) | 通过`CzmlDataSource`的形式加载随时间变化颜色的多边形         | ![CZMLPolygon-InterpolatingReferences.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPolygon-InterpolatingReferences.jpg) |
+| [CZML Polygon - Intervals, Availability](https://sandcastle.cesium.com/?src=CZML%20Polygon%20-%20Intervals%2C%20Availability.html&label=All) | 通过`CzmlDataSource`的形式加载随时间变化显示和隐藏的多边形   | ![CZMLPolygon-Intervals,Availability.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPolygon-Intervals,Availability.jpg) |
+| [CZML Polygon](https://sandcastle.cesium.com/?src=CZML%20Polygon.html&label=All) | 通过`CzmlDataSource`的形式加载多边形                         | ![CZMLPolygon.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPolygon.jpg) |
+| [CZML Polyline Volume](https://sandcastle.cesium.com/?src=CZML%20Polyline%20Volume.html&label=All) | 通过`CzmlDataSource`的形式加载折线体                         | ![CZMLPolylineVolume.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPolylineVolume.jpg) |
+| [CZML Polyline](https://sandcastle.cesium.com/?src=CZML%20Polyline.html&label=All) | 通过`CzmlDataSource`的形式加载折线                           | ![CZMLPolyline.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPolyline.jpg) |
+| [CZML Position Definitions](https://sandcastle.cesium.com/?src=CZML%20Position%20Definitions.html&label=All) | 通过`CzmlDataSource`的形式加载实体所使用的坐标定义方式：经纬高、笛卡尔空间直角坐标系、弧度 | ![CZMLPositionDefinitions.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLPositionDefinitions.jpg) |
+| [CZML Rectangle](https://sandcastle.cesium.com/?src=CZML%20Rectangle.html&label=All) | 通过`CzmlDataSource`的形式加载矩形                           | ![CZMLRectangle.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLRectangle.jpg) |
+| [CZML Reference Properties](https://sandcastle.cesium.com/?src=CZML%20Reference%20Properties.html&label=All) | 通过`CzmlDataSource`的形式加载实体并定义鼠标拾取时的弹窗`description` | ![CZMLReferenceProperties.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLReferenceProperties.jpg) |
+| [CZML Spheres and Ellipsoids](https://sandcastle.cesium.com/?src=CZML%20Spheres%20and%20Ellipsoids.html&label=All) | 通过`CzmlDataSource`的形式加载球体和椭球体                   | ![CZMLSpheresandEllipsoids.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLSpheresandEllipsoids.jpg) |
+| [CZML Wall](https://sandcastle.cesium.com/?src=CZML%20Wall.html&label=All) | 通过`CzmlDataSource`的形式加载墙体                           | ![CZMLWall.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLWall.jpg) |
+| [CZML zIndex](https://sandcastle.cesium.com/?src=CZML%20ZIndex.html&label=All) | 通过`CzmlDataSource`的形式加载多个实体时定义不同实体的堆叠顺序`zIndex` | ![CZMLZIndex.jpg](/cesium-docs/assets/img/example/sandcastle/CZMLZIndex.jpg) |
+| [CZML](https://sandcastle.cesium.com/?src=CZML.html&label=All) | 通过`CzmlDataSource`的形式加载外部已经定义好的`.czml`文件    | ![CZML.jpg](/cesium-docs/assets/img/example/sandcastle/CZML.jpg) |
+| [Multi-part CZML](https://sandcastle.cesium.com/?src=Multi-part%20CZML.html&label=All) | 加载多个`.czml`文件，将其拼接成一个完整的路径                | ![Multi-partCZML.jpg](/cesium-docs/assets/img/example/sandcastle/Multi-partCZML.jpg) |
 
 ## DataSource
 | 案例名称 / 链接                                              | 案例内容                                     | 图例 |
@@ -196,31 +196,31 @@ title: 官方案例汇总
 | [KML](https://sandcastle.cesium.com/?src=KML.html&label=All) | 加载KML数据：全球基础设施、全球GDP、行车路径 |      |
 
 ## 特效
-| 案例名称 / 链接                                              | 案例内容                                                     | 图例 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| [Ambient Occlusion](https://sandcastle.cesium.com/?src=Ambient%20Occlusion.html&label=All) | 坏境光遮蔽                                                   |      |
-| [Atmosphere](https://sandcastle.cesium.com/?src=Atmosphere.html&label=All) | 大气特效：地表、天空                                         |      |
-| [Bloom](https://sandcastle.cesium.com/?src=Bloom.html&label=All) | 场景渲染特效：对比度、亮度、伽马                             |      |
-| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All) | 云层特效及其参数调试                                         |      |
-| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All) | 加载一片云层                                                 |      |
-| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All) | 自定义`Shader`实现模型点击高亮效果                           |      |
-| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All) | 自定义`Shader`实现场景马赛克效果                             |      |
-| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All) | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果             |      |
-| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All) | 自定义`Shader`修改模型的材质信息                             |      |
-| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                                   |      |
-| [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All) | 背景虚化、场景虚化                                           |      |
-| [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All) | 抗锯齿                                                       |      |
-| [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰                         |      |
-| [HighDynamicRange](https://sandcastle.cesium.com/?src=High%20Dynamic%20Range.html&label=All) | High Dynamic Range，HDR效果，用于渲染更加真实的3D效果        |      |
-| [Image-Based Lighting](https://sandcastle.cesium.com/?src=Image-Based%20Lighting.html&label=All) | envmap，环境光反射效果                                       |      |
-| [LensFlare](https://sandcastle.cesium.com/?src=LensFlare.html&label=All) | 镜头炫光                                                     |      |
-| [Lighting](https://sandcastle.cesium.com/?src=Lighting.html&label=All) | 灯光效果：局部光、散光、日光、月光...                        |      |
-| [MSAA](https://sandcastle.cesium.com/?src=MSAA.html&label=All) | 多重采样抗锯齿                                               |      |
-| [Particle System Fireworks](https://sandcastle.cesium.com/?src=Particle%20System%20Fireworks.html&label=All) | 粒子效果：烟花                                               |      |
-| [Particle System Tails](https://sandcastle.cesium.com/?src=Particle%20System%20Tails.html&label=All) | 粒子效果：飞机发动机尾气                                     |      |
-| [Particle System Weather](https://sandcastle.cesium.com/?src=Particle%20System%20Weather.html&label=All) | 粒子效果：天气雨雪                                           |      |
-| [Particle System](https://sandcastle.cesium.com/?src=Particle%20System.html&label=All) | 粒子效果参数调整：汽车尾气                                   |      |
-| [Per-Feature Post Processing](https://sandcastle.cesium.com/?src=Per-Feature%20Post%20Processing.html&label=All) | 后处理特效：鼠标悬停改变模型颜色，鼠标悬停模型边缘高亮       |      |
-| [Physically-Based Materials](https://sandcastle.cesium.com/?src=Physically-Based%20Materials.html&label=All) | 模型光照阴影效果                                             |      |
-| [Post Processing](https://sandcastle.cesium.com/?src=Post%20Processing.html&label=All) | 后处理特效：模型边缘高亮、黑白场景、场景亮度、夜视仪场景模型 |      |
-| [Shadows](https://sandcastle.cesium.com/?src=Shadows.html&label=All) | 阴影：场景阴影、模型阴影、地形阴影                           |      |
+| 案例名称 / 链接                                              | 案例内容                                                     | 图例                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Ambient Occlusion](https://sandcastle.cesium.com/?src=Ambient%20Occlusion.html&label=All) | 坏境光遮蔽                                                   | ![AmbientOcclusion.jpg](/cesium-docs/assets/img/example/sandcastle/AmbientOcclusion.jpg) |
+| [Atmosphere](https://sandcastle.cesium.com/?src=Atmosphere.html&label=All) | 大气特效：地表、天空                                         | ![Atmosphere.jpg](/cesium-docs/assets/img/example/sandcastle/Atmosphere.jpg) |
+| [Bloom](https://sandcastle.cesium.com/?src=Bloom.html&label=All) | 场景渲染特效：对比度、亮度、伽马                             | ![Bloom.jpg](/cesium-docs/assets/img/example/sandcastle/Bloom.jpg) |
+| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All) | 云层特效及其参数调试                                         |                                                              |
+| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All) | 加载一片云层                                                 |                                                              |
+| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All) | 自定义`Shader`实现模型点击高亮效果                           |                                                              |
+| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All) | 自定义`Shader`实现场景马赛克效果                             |                                                              |
+| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All) | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果             |                                                              |
+| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All) | 自定义`Shader`修改模型的材质信息                             |                                                              |
+| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                                   |                                                              |
+| [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All) | 背景虚化、场景虚化                                           |                                                              |
+| [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All) | 抗锯齿                                                       |                                                              |
+| [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All) | 迷雾效果：视角离目标越近，场景越清晰                         |                                                              |
+| [HighDynamicRange](https://sandcastle.cesium.com/?src=High%20Dynamic%20Range.html&label=All) | High Dynamic Range，HDR效果，用于渲染更加真实的3D效果        |                                                              |
+| [Image-Based Lighting](https://sandcastle.cesium.com/?src=Image-Based%20Lighting.html&label=All) | envmap，环境光反射效果                                       |                                                              |
+| [LensFlare](https://sandcastle.cesium.com/?src=LensFlare.html&label=All) | 镜头炫光                                                     |                                                              |
+| [Lighting](https://sandcastle.cesium.com/?src=Lighting.html&label=All) | 灯光效果：局部光、散光、日光、月光...                        |                                                              |
+| [MSAA](https://sandcastle.cesium.com/?src=MSAA.html&label=All) | 多重采样抗锯齿                                               |                                                              |
+| [Particle System Fireworks](https://sandcastle.cesium.com/?src=Particle%20System%20Fireworks.html&label=All) | 粒子效果：烟花                                               |                                                              |
+| [Particle System Tails](https://sandcastle.cesium.com/?src=Particle%20System%20Tails.html&label=All) | 粒子效果：飞机发动机尾气                                     |                                                              |
+| [Particle System Weather](https://sandcastle.cesium.com/?src=Particle%20System%20Weather.html&label=All) | 粒子效果：天气雨雪                                           |                                                              |
+| [Particle System](https://sandcastle.cesium.com/?src=Particle%20System.html&label=All) | 粒子效果参数调整：汽车尾气                                   |                                                              |
+| [Per-Feature Post Processing](https://sandcastle.cesium.com/?src=Per-Feature%20Post%20Processing.html&label=All) | 后处理特效：鼠标悬停改变模型颜色，鼠标悬停模型边缘高亮       |                                                              |
+| [Physically-Based Materials](https://sandcastle.cesium.com/?src=Physically-Based%20Materials.html&label=All) | 模型光照阴影效果                                             |                                                              |
+| [Post Processing](https://sandcastle.cesium.com/?src=Post%20Processing.html&label=All) | 后处理特效：模型边缘高亮、黑白场景、场景亮度、夜视仪场景模型 |                                                              |
+| [Shadows](https://sandcastle.cesium.com/?src=Shadows.html&label=All) | 阴影：场景阴影、模型阴影、地形阴影                           |                                                              |
