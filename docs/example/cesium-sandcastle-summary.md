@@ -4,12 +4,12 @@ title: 官方案例汇总
 
 ## 基础界面操作
 
-| 案例名称 / 链接                                                                              | 案例内容                | 图例  |
-| -------------------------------------------------------------------------------------- | ------------------- | --- |
-| [Cardboard](https://sandcastle.cesium.com/?src=Cardboard.html&label=All)               | 切换到VR视角             |     |
-| [Cesium Widget](https://sandcastle.cesium.com/?src=Cesium%20Widget.html&label=All)     | Cesium简化场景（不包含任何控件） |     |
-| [Custom Geocoder](https://sandcastle.cesium.com/?src=Custom%20Geocoder.html&label=All) | 自定义查找位置控件           |     |
-| [Hello World](https://sandcastle.cesium.com/?label=All)                                | Hello World初始界面     |     |
+| 案例名称 / 链接                                                                              | 案例内容                | 图例                                                                 |
+| -------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------ |
+| [Cardboard](https://sandcastle.cesium.com/?src=Cardboard.html&label=All)               | 切换到VR视角             | ![](/cesium-docs/assets/img/example/sandcastle/Cardboard.jpg)      |
+| [Cesium Widget](https://sandcastle.cesium.com/?src=Cesium%20Widget.html&label=All)     | Cesium简化场景（不包含任何控件） | ![](/cesium-docs/assets/img/example/sandcastle/CesiumWidget.jpg)   |
+| [Custom Geocoder](https://sandcastle.cesium.com/?src=Custom%20Geocoder.html&label=All) | 自定义查找位置控件           | ![](/cesium-docs/assets/img/example/sandcastle/CustomGeocoder.jpg) |
+| [Hello World](https://sandcastle.cesium.com/?label=All)                                | Hello World初始界面     | ![](/cesium-docs/assets/img/example/sandcastle/HelloWorld.jpg)     |
 
 ## 场景操作
 
@@ -112,10 +112,10 @@ title: 官方案例汇总
 
 ## 图形 Primitive
 
-| 案例名称 / 链接                                                                                          | 案例内容        | 图例  |
-| -------------------------------------------------------------------------------------------------- | ----------- | --- |
-| [Cesium OSM Buildings](https://sandcastle.cesium.com/?src=Cesium%20OSM%20Buildings.html&label=All) | 加载OSM全球建筑白膜 |     |
-| [Materials](https://sandcastle.cesium.com/?src=Materials.html&label=All)                           | 自定义图形表面的材质  |     |
+| 案例名称 / 链接                                                                                          | 案例内容        | 图例                                                                     |
+| -------------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------- |
+| [Cesium OSM Buildings](https://sandcastle.cesium.com/?src=Cesium%20OSM%20Buildings.html&label=All) | 加载OSM全球建筑白膜 | ![](/cesium-docs/assets/img/example/sandcastle/CesiumOSMBuildings.jpg) |
+| [Materials](https://sandcastle.cesium.com/?src=Materials.html&label=All)                           | 自定义图形表面的材质  | ![](/cesium-docs/assets/img/example/sandcastle/Materials.jpg)          |
 
 ## 影像
 
@@ -209,13 +209,13 @@ title: 官方案例汇总
 | [Ambient Occlusion](https://sandcastle.cesium.com/?src=Ambient%20Occlusion.html&label=All)                                   | 坏境光遮蔽                                  | ![AmbientOcclusion.jpg](/cesium-docs/assets/img/example/sandcastle/AmbientOcclusion.jpg) |
 | [Atmosphere](https://sandcastle.cesium.com/?src=Atmosphere.html&label=All)                                                   | 大气特效：地表、天空                             | ![Atmosphere.jpg](/cesium-docs/assets/img/example/sandcastle/Atmosphere.jpg)             |
 | [Bloom](https://sandcastle.cesium.com/?src=Bloom.html&label=All)                                                             | 场景渲染特效：对比度、亮度、伽马                       | ![Bloom.jpg](/cesium-docs/assets/img/example/sandcastle/Bloom.jpg)                       |
-| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All)                                     | 云层特效及其参数调试                             |                                                                                          |
-| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All)                                                           | 加载一片云层                                 |                                                                                          |
-| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All)   | 自定义`Shader`实现模型点击高亮效果                  |                                                                                          |
-| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All)                             | 自定义`Shader`实现场景马赛克效果                   |                                                                                          |
-| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All)                   | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果           |                                                                                          |
-| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All)                         | 自定义`Shader`修改模型的材质信息                   |                                                                                          |
-| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                      |                                                                                          |
+| [Cloud Parameters](https://sandcastle.cesium.com/?src=Cloud%20Parameters.html&label=All)                                     | 云层特效及其参数调试                             | ![](/cesium-docs/assets/img/example/sandcastle/CloudParameters.jpg)                      |
+| [Clouds](https://sandcastle.cesium.com/?src=Clouds.html&label=All)                                                           | 加载一片云层                                 | ![](/cesium-docs/assets/img/example/sandcastle/Clouds.jpg)                               |
+| [Custom Per-Feature Post Process](https://sandcastle.cesium.com/?src=Custom%20Per-Feature%20Post%20Process.html&label=All)   | 自定义`Shader`实现模型点击高亮效果                  | ![](/cesium-docs/assets/img/example/sandcastle/CustomPer-FeaturePostProcess.jpg)         |
+| [Custom Post Process](https://sandcastle.cesium.com/?src=Custom%20Post%20Process.html&label=All)                             | 自定义`Shader`实现场景马赛克效果                   | ![](/cesium-docs/assets/img/example/sandcastle/CustomPostProcess.jpg)                    |
+| [Custom Shaders 3D Tiles](https://sandcastle.cesium.com/?src=Custom%20Shaders%203D%20Tiles.html&label=All)                   | 自定义`Shader`实现建筑白膜数据随距离变换颜色效果           | ![](/cesium-docs/assets/img/example/sandcastle/CustomShaders3DTiles.jpg)                 |
+| [Custom Shaders Models](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Models.html&label=All)                         | 自定义`Shader`修改模型的材质信息                   | ![](/cesium-docs/assets/img/example/sandcastle/CustomShadersModels.jpg)                  |
+| [Custom Shaders Property Textures](https://sandcastle.cesium.com/?src=Custom%20Shaders%20Property%20Textures.html&label=All) | 自定义`Shader`修改材质信息                      | ![](/cesium-docs/assets/img/example/sandcastle/CustomShadersPropertyTextures.jpg)        |
 | [Depth of Field](https://sandcastle.cesium.com/?src=Depth%20of%20Field.html&label=All)                                       | 背景虚化、场景虚化                              |                                                                                          |
 | [FXAA](https://sandcastle.cesium.com/?src=FXAA.html&label=All)                                                               | 抗锯齿                                    |                                                                                          |
 | [Fog Post Process](https://sandcastle.cesium.com/?src=Fog%20Post%20Process.html&label=All)                                   | 迷雾效果：视角离目标越近，场景越清晰                     |                                                                                          |
