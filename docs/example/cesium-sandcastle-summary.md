@@ -142,18 +142,18 @@ title: 官方案例汇总
 
 ## 地形
 
-| 案例名称 / 链接                                                                                                                | 案例内容                                                     | 图例  |
-| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | --- |
-| [ArcGIS Tiled Elevation Terrain](https://sandcastle.cesium.com/?src=ArcGIS%20Tiled%20Elevation%20Terrain.html&label=All) | ArcGIS地形服务                                               |     |
-| [ArcticDEM](https://sandcastle.cesium.com/?src=ArcticDEM.html&label=All)                                                 | ArcticDEM数字高程模型                                          |     |
-| [Cesium World Terrain](https://sandcastle.cesium.com/?src=Cesium%20World%20Terrain.html&label=All)                       | 加载Cesium官方提供的地形服务                                        |     |
-| [Drawing on Terrain](https://sandcastle.cesium.com/?src=Drawing%20on%20Terrain.html&label=All)                           | 在地形上绘制折线或多边形                                             |     |
-| [Google Earth Enterprise](https://sandcastle.cesium.com/?src=Google%20Earth%20Enterprise.html&label=All)                 | 由`GoogleEarthEnterpriseTerrainProvider`提供的谷歌地形服务         |     |
-| [PAMAP Terrain](https://sandcastle.cesium.com/?src=PAMAP%20Terrain.html&label=All)                                       | 加载由Pennsylvania Spatial Data Access (PASDA)提供的宾夕法尼亚高精度地形 |     |
-| [Procedural Terrain](https://sandcastle.cesium.com/?src=Procedural%20Terrain.html&label=All)                             | 程序化地形：使用`CustomHeightmapTerrainProvider`自定义地形的形状         |     |
-| [Terrain Clipping Planes](https://sandcastle.cesium.com/?src=Terrain%20Clipping%20Planes.html&label=All)                 | 地形剖切                                                     |     |
-| [Terrain Exaggeration](https://sandcastle.cesium.com/?src=Terrain%20Exaggeration.html&label=All)                         | 地形夸张：通过自定义的比例和相对高度参数调整地形                                 |     |
-| [Terrain](https://sandcastle.cesium.com/?src=Terrain.html&label=All)                                                     | 地形示例                                                     |     |
+| 案例名称 / 链接                                                                                                                | 案例内容                                                     | 图例                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [ArcGIS Tiled Elevation Terrain](https://sandcastle.cesium.com/?src=ArcGIS%20Tiled%20Elevation%20Terrain.html&label=All) | ArcGIS地形服务                                               | ![](/cesium-docs/assets/img/example/sandcastle/ArcGISTiledElevationTerrain.jpg) |
+| [ArcticDEM](https://sandcastle.cesium.com/?src=ArcticDEM.html&label=All)                                                 | ArcticDEM数字高程模型                                          | ![](/cesium-docs/assets/img/example/sandcastle/ArcticDEM.jpg)                   |
+| [Cesium World Terrain](https://sandcastle.cesium.com/?src=Cesium%20World%20Terrain.html&label=All)                       | 加载Cesium官方提供的地形服务                                        | ![](/cesium-docs/assets/img/example/sandcastle/CesiumWorldTerrain.jpg)          |
+| [Drawing on Terrain](https://sandcastle.cesium.com/?src=Drawing%20on%20Terrain.html&label=All)                           | 在地形上绘制折线或多边形                                             | ![](/cesium-docs/assets/img/example/sandcastle/DrawingonTerrain.jpg)            |
+| [Google Earth Enterprise](https://sandcastle.cesium.com/?src=Google%20Earth%20Enterprise.html&label=All)                 | 由`GoogleEarthEnterpriseTerrainProvider`提供的谷歌地形服务         | ![](/cesium-docs/assets/img/example/sandcastle/GoogleEarthEnterprise.jpg)       |
+| [PAMAP Terrain](https://sandcastle.cesium.com/?src=PAMAP%20Terrain.html&label=All)                                       | 加载由Pennsylvania Spatial Data Access (PASDA)提供的宾夕法尼亚高精度地形 | ![](/cesium-docs/assets/img/example/sandcastle/PAMAPTerrain.jpg)                |
+| [Procedural Terrain](https://sandcastle.cesium.com/?src=Procedural%20Terrain.html&label=All)                             | 程序化地形：使用`CustomHeightmapTerrainProvider`自定义地形的形状         | ![](/cesium-docs/assets/img/example/sandcastle/ProceduralTerrain.jpg)           |
+| [Terrain Clipping Planes](https://sandcastle.cesium.com/?src=Terrain%20Clipping%20Planes.html&label=All)                 | 地形剖切                                                     | ![](/cesium-docs/assets/img/example/sandcastle/TerrainClippingPlanes.jpg)       |
+| [Terrain Exaggeration](https://sandcastle.cesium.com/?src=Terrain%20Exaggeration.html&label=All)                         | 地形夸张：通过自定义的比例和相对高度参数调整地形                                 | ![](/cesium-docs/assets/img/example/sandcastle/TerrainExaggeration.jpg)         |
+| [Terrain](https://sandcastle.cesium.com/?src=Terrain.html&label=All)                                                     | 地形示例                                                     | ![](/cesium-docs/assets/img/example/sandcastle/Terrain.jpg)                     |
 
 ## CZML
 
