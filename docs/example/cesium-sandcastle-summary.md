@@ -190,17 +190,17 @@ title: 官方案例汇总
 
 ## DataSource
 
-| 案例名称 / 链接                                                                                          | 案例内容                         | 图例  |
-| -------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
-| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All)                         | 通过`KmlDataSource`的形式实现聚合操作   |     |
-| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All)         | 自定义数据源`WebGLGlobeDataSource` |     |
-| [DataSource Ordering](https://sandcastle.cesium.com/?src=DataSource%20Ordering.html&label=All)     | 定义`DataSource`的层叠顺序          |     |
-| [Export KML](https://sandcastle.cesium.com/?src=Export%20KML.html&label=All)                       | 导出KML数据                      |     |
-| [GPX](https://sandcastle.cesium.com/?src=GPX.html&label=All)                                       | 通过`GpxDataSource`加载点、路径或轨迹数据 |     |
-| [GeoJSON and TopoJSON](https://sandcastle.cesium.com/?src=GeoJSON%20and%20TopoJSON.html&label=All) | 加载GeoJSON并修改其样式              |     |
-| [GeoJSON simplestyle](https://sandcastle.cesium.com/?src=GeoJSON%20simplestyle.html&label=All)     | 加载简单样式的GeoJSON               |     |
-| [KML Tours](https://sandcastle.cesium.com/?src=KML%20Tours.html&label=All)                         | 根据KML定义的坐标数据执行`flyto`        |     |
-| [KML](https://sandcastle.cesium.com/?src=KML.html&label=All)                                       | 加载KML数据：全球基础设施、全球GDP、行车路径    |     |
+| 案例名称 / 链接                                                                                          | 案例内容                         | 图例                                                                     |
+| -------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------- |
+| [Clustering](https://sandcastle.cesium.com/?src=Clustering.html&label=All)                         | 通过`KmlDataSource`的形式实现聚合操作   | ![](/cesium-docs/assets/img/example/sandcastle/Clustering.jpg)         |
+| [Custom DataSource](https://sandcastle.cesium.com/?src=Custom%20DataSource.html&label=All)         | 自定义数据源`WebGLGlobeDataSource` | ![](/cesium-docs/assets/img/example/sandcastle/CustomDataSource.jpg)   |
+| [DataSource Ordering](https://sandcastle.cesium.com/?src=DataSource%20Ordering.html&label=All)     | 定义`DataSource`的层叠顺序          | ![](/cesium-docs/assets/img/example/sandcastle/DataSourceOrdering.jpg) |
+| [Export KML](https://sandcastle.cesium.com/?src=Export%20KML.html&label=All)                       | 导出KML数据                      | ![](/cesium-docs/assets/img/example/sandcastle/ExportKML.jpg)          |
+| [GPX](https://sandcastle.cesium.com/?src=GPX.html&label=All)                                       | 通过`GpxDataSource`加载点、路径或轨迹数据 | ![](/cesium-docs/assets/img/example/sandcastle/GPX.jpg)                |
+| [GeoJSON and TopoJSON](https://sandcastle.cesium.com/?src=GeoJSON%20and%20TopoJSON.html&label=All) | 加载GeoJSON并修改其样式              | ![](/cesium-docs/assets/img/example/sandcastle/GeoJSONandTopoJSON.jpg) |
+| [GeoJSON simplestyle](https://sandcastle.cesium.com/?src=GeoJSON%20simplestyle.html&label=All)     | 加载简单样式的GeoJSON               | ![](/cesium-docs/assets/img/example/sandcastle/GeoJSONsimplestyle.jpg) |
+| [KML Tours](https://sandcastle.cesium.com/?src=KML%20Tours.html&label=All)                         | 根据KML定义的坐标数据执行`flyto`        | ![](/cesium-docs/assets/img/example/sandcastle/KMLTours.jpg)           |
+| [KML](https://sandcastle.cesium.com/?src=KML.html&label=All)                                       | 加载KML数据：全球基础设施、全球GDP、行车路径    | ![](/cesium-docs/assets/img/example/sandcastle/KML.jpg)                |
 
 ## 特效
 
