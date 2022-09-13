@@ -93,7 +93,8 @@ module.exports = {
           collapsable: false,
           children: [
             'vue-integration',
-            'three-integration'
+            'three-integration',
+            'cannon-integration'
           ],
         },
       ],
