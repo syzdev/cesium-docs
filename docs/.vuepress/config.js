@@ -160,24 +160,24 @@ module.exports = {
     '@vuepress/medium-zoom': {
       selector: 'img',
     },
-    '@vuepress-reco/vuepress-plugin-bulletin-popover': {
-      width: '300px', // 默认 260px
-      title: '消息提示',
-      body: [
-        {
-          type: 'title',
-          content: '内容正在持续更新中，敬请关注。',
-          style: 'text-aligin: center;',
-        },
-      ],
-      // footer: [
-      //   {
-      //     type: 'button',
-      //     text: '跳转',
-      //     link: 'https://syzdev.gitee.io/cesium-docs/'
-      //   },
-      // ]
-    },
+    // '@vuepress-reco/vuepress-plugin-bulletin-popover': {
+    //   width: '300px', // 默认 260px
+    //   title: '消息提示',
+    //   body: [
+    //     {
+    //       type: 'title',
+    //       content: '内容正在持续更新中，敬请关注。',
+    //       style: 'text-aligin: center;',
+    //     },
+    //   ],
+    //   // footer: [
+    //   //   {
+    //   //     type: 'button',
+    //   //     text: '跳转',
+    //   //     link: 'https://syzdev.gitee.io/cesium-docs/'
+    //   //   },
+    //   // ]
+    // },
   },
   markdown: {
     lineNumbers: true,
