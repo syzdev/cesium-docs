@@ -2,27 +2,20 @@
   "name": "cesium-docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "syzdev",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs --temp .temp",
-    "build": "vuepress build docs",
+    "dev": "vuepress dev .",
+    "start": "vuepress dev .",
+    "build": "vuepress build .",
     "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-theme-reco": "2.0.0-beta.41"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/syzdev/cesium-docs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/syzdev/cesium-docs/issues"
-  },
-  "homepage": "https://github.com/syzdev/cesium-docs#readme",
-  "devDependencies": {
-    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
-    "@vuepress/plugin-medium-zoom": "^1.9.7",
-    "vuepress": "^1.8.2",
-    "vuepress-theme-reco": "^1.6.11"
   }
 }

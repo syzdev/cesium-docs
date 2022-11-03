@@ -1,0 +1,60 @@
+.banner-brand-wrapper .hero-content .hero-text .btn-group li .icon-container {
+  background-color: #6dabe4;
+  border-width: 1px;
+  border-color: #cdcdcd;
+}
+
+.banner-brand-wrapper
+  .hero-content
+  .hero-text
+  .btn-group
+  li
+  .icon-container
+  span {
+  font-size: 20px !important;
+  color: #ffffff;
+}
+
+.dark
+  .banner-brand-wrapper
+  .hero-content
+  .hero-text
+  .btn-group
+  li
+  .icon-container {
+  color: #ffffff;
+}
+
+.series-container .series-group .series-heading.active,
+.theme-container .theme-reco-default-content a,
+.page-catalog-container ul .page-catalog-menu-depth_2.active a {
+  color: #6dabe4;
+  font-weight: bold;
+}
+
+.series-container a.series-item:hover,
+.page-catalog-container ul .page-catalog-menu-depth_3.active a {
+  color: #6dabe4;
+}
+
+.series-container a.series-item::before,
+.page-catalog-container ul .page-catalog-menu-depth_3::before {
+  background-color: #6dabe4;
+}
+
+.theme-container .theme-reco-default-content p img {
+  border-radius: 4px !important;
+  border: 1px solid #cdcdcd;
+}
+
+.custom-container.details {
+  background-color: rgba(109, 171, 228, 0.5);
+}
+
+.back-to-top {
+  background-color: #6dabe4 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6dabe4 !important;
+}
