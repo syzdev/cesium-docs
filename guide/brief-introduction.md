@@ -2,9 +2,7 @@
 title: Cesium 简介
 ---
 
-## Cesium 简介
-
-Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebGL技术，能够在Web平台搭建虚拟地球及场景展示应用。如：
+Cesium是一个用于显示三维地球的开源库，旨在释放3D数据的力量。Cesium基于WebGL技术，能够在Web平台搭建虚拟地球及场景展示应用：
 
 ![cbi-01](/assets/img/guide/cbi-01.jpg)
 
@@ -23,13 +21,14 @@ Cesium是一个用于显示三维地球的开源Javascript库，Cesium基于WebG
 
 ![cbi-02](/assets/img/guide/cbi-02.gif)
 
-但Cesium的强大远不止如此，还可以在地球上展示各种3D数据（gltf和3d tiles），如BIM模型、倾斜摄影、人工模型、点云数据等，如下图就是使用Cesium中的3D tiles数据来展示迪拜大楼及其周边场景：
+但Cesium的强大远不止如此，还可以在地球上展示各种3D数据：
+- 数据格式：glTF、3D Tiles；
+- 数据类型：BIM模型、倾斜摄影、人工模型、点云数据等。
+
+如下图就是使用Cesium加载3D Tiles数据格式的迪拜大楼及其周边场景：
 
 ![cbi-03](/assets/img/guide/cbi-03.jpg)
 
-此外，于2020年6月，Cesium宣布与虚幻引擎（Unreal Engine）达成合作，虚幻引擎作为电子游戏领域著名的三维引擎，拥有世界顶尖的颜色及材质渲染技术、动态阴影及光线追踪技术、刚体物理碰撞技术等，如图：
+此外，2020年6月，Cesium官方宣布与虚幻引擎（Unreal Engine）达成合作，虚幻引擎作为电子游戏领域著名的三维引擎，拥有世界顶尖的颜色及材质渲染技术、动态阴影及光线追踪技术、刚体物理碰撞技术等。在游戏引擎的加持下，渲染出来的效果将更加逼真，如图：
 
 ![cbi-04](/assets/img/guide/cbi-04.jpg)
-
-该合作能够使Cesium在地质过程表达、智慧城市、建筑工程以及航空航天等领域的拓展拥有了更多的可能性。
-
