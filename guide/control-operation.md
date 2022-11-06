@@ -19,7 +19,7 @@ title: 视图控件操作
 
 隐藏查找位置的属性是`geocoder`，具体描述如下：
 
-| Name       | Type    | Default |
+| 名称       | 类型    | 默认值 |
 | ---------- | ------- | ------- |
 | `geocoder` | Boolean | `true`  |
 
@@ -35,7 +35,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏返回视角到初始位置的属性是`homeButton`，具体描述如下：
 
-| Name         | Type    | Default |
+| 名称         | 类型    | 默认值 |
 | ------------ | ------- | ------- |
 | `homeButton` | Boolean | `true`  |
 
@@ -51,7 +51,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏视角模式选择的属性是`sceneModePicker`，具体描述如下：
 
-| Name              | Type    | Default |
+| 名称              | 类型    | 默认值 |
 | ----------------- | ------- | ------- |
 | `sceneModePicker` | Boolean | `true`  |
 
@@ -67,7 +67,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏图层选择器的属性是`baseLayerPicker`，具体描述如下：
 
-| Name              | Type    | Default |
+| 名称              | 类型    | 默认值 |
 | ----------------- | ------- | ------- |
 | `baseLayerPicker` | Boolean | `true`  |
 
@@ -83,7 +83,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏帮助的属性是`navigationHelpButton`，具体描述如下：
 
-| Name                       | Type    | Default |
+| 名称                       | 类型    | 默认值 |
 | -------------------------- | ------- | ------- |
 | `navigationHelpButton` | Boolean | `true`  |
 
@@ -99,7 +99,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏动画速度控制器的属性是`animation`，具体描述如下：
 
-| Name        | Type    | Default |
+| 名称        | 类型    | 默认值 |
 | ----------- | ------- | ------- |
 | `animation` | Boolean | `true`  |
 
@@ -123,7 +123,7 @@ viewer._cesiumWidget._creditContainer.style.display = "none"
 
 隐藏时间轴的属性是`timeline`，具体描述如下：
 
-| Name       | Type    | Default |
+| 名称       | 类型    | 默认值 |
 | ---------- | ------- | ------- |
 | `timeline` | Boolean | `true`  |
 
@@ -139,7 +139,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 
 隐藏全屏按钮的属性是`fullscreenButton`，具体描述如下：
 
-| Name               | Type    | Default |
+| 名称               | 类型    | 默认值 |
 | ------------------ | ------- | ------- |
 | `fullscreenButton` | Boolean | `true`  |
 

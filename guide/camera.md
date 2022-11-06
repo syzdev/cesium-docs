@@ -22,7 +22,7 @@ title: 相机 Camera
 
 ![c01](/assets/img/guide/c01.png)
 
-| 属性   <img width=300/>      | 图例     <img width=100/>      |
+| 属性   <img width=400/>      | 图例     <img width=100/>      |
 | -------------------------------- | -------------------------------------- |
 | `roll`：滚转角，围绕 X 轴旋转    | <img src="/assets/img/guide/c04.gif" width="30%" > |
 | `pitch`：仰俯角，围绕 Y 轴旋转   | <img src="/assets/img/guide/c03.gif" width="30%" > |
