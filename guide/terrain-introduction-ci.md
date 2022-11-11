@@ -28,7 +28,7 @@ viewer.terrainProvider = terrainProvider
 
 ![ts-07](/assets/img/guide/ts-07.gif)
 
-::: details 点击查看在线示例：Cesium ion 地形水面效果
+::: details 点击查看在线示例：动态水面效果
 
 <br/>
  <iframe
